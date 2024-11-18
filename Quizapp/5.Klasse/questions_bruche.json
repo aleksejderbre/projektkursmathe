@@ -1,0 +1,94 @@
+{
+    "questions": [
+        {
+            "question": "Welcher Bruch ist größer als 1/2?",
+            "answers": [
+                { "text": "1/4", "correct": false },
+                { "text": "3/4", "correct": true },
+                { "text": "1/8", "correct": false },
+                { "text": "1/3", "correct": false }
+            ]
+        },
+        {
+            "question": "Was ist 1/2 + 1/4?",
+            "answers": [
+                { "text": "3/4", "correct": true },
+                { "text": "1/2", "correct": false },
+                { "text": "1", "correct": false },
+                { "text": "1/4", "correct": false }
+            ]
+        },
+        {
+            "question": "Was ergibt 1/3 + 1/3?",
+            "answers": [
+                { "text": "2/3", "correct": true },
+                { "text": "1/3", "correct": false },
+                { "text": "1/2", "correct": false },
+                { "text": "1", "correct": false }
+            ]
+        },
+        {
+            "question": "Was ist 1/4 + 1/4?",
+            "answers": [
+                { "text": "1/2", "correct": true },
+                { "text": "1/4", "correct": false },
+                { "text": "3/4", "correct": false },
+                { "text": "1", "correct": false }
+            ]
+        },
+        {
+            "question": "Welcher Bruch ist kleiner als 1/3?",
+            "answers": [
+                { "text": "1/4", "correct": true },
+                { "text": "1/2", "correct": false },
+                { "text": "2/3", "correct": false },
+                { "text": "3/4", "correct": false }
+            ]
+        },
+        {
+            "question": "Was ergibt 1/2 - 1/4?",
+            "answers": [
+                { "text": "1/4", "correct": true },
+                { "text": "1/2", "correct": false },
+                { "text": "1", "correct": false },
+                { "text": "3/4", "correct": false }
+            ]
+        },
+        {
+            "question": "Welcher Bruch ist gleich 2/4?",
+            "answers": [
+                { "text": "1/2", "correct": true },
+                { "text": "1/4", "correct": false },
+                { "text": "3/4", "correct": false },
+                { "text": "1", "correct": false }
+            ]
+        },
+        {
+            "question": "Welcher Bruch ist größer als 2/3?",
+            "answers": [
+                { "text": "3/4", "correct": true },
+                { "text": "1/2", "correct": false },
+                { "text": "1/3", "correct": false },
+                { "text": "1/4", "correct": false }
+            ]
+        },
+        {
+            "question": "Was ist 1 - 1/3?",
+            "answers": [
+                { "text": "2/3", "correct": true },
+                { "text": "1/2", "correct": false },
+                { "text": "1/3", "correct": false },
+                { "text": "1/4", "correct": false }
+            ]
+        },
+        {
+            "question": "Was ergibt 3/4 + 1/4?",
+            "answers": [
+                { "text": "1", "correct": true },
+                { "text": "1/2", "correct": false },
+                { "text": "3/4", "correct": false },
+                { "text": "1/4", "correct": false }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,114 @@
+/* Globale Schriftart und Basis-Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+}
+
+/* Container zentrieren und skalieren */
+.container {
+    width: 100%;
+    max-width: 390px; /* Maximale Breite für iPhone 12 */
+    padding: 20px;
+    text-align: center;
+}
+
+/* Styling für Header */
+h1 {
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #555;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+/* Vertikale Links als Kästchen */
+.links a {
+    display: block;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 1.1em;
+    margin: 10px 0;
+    transition: background-color 0.3s ease;
+}
+
+.links a:hover {
+    background-color: #0056b3;
+}
+
+/* Back-Arrow Container Styling */
+.back-arrow {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 1.2em;
+}
+
+.back-arrow a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.back-arrow a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Quiz Container Styling */
+.quiz-container {
+    max-width: 600px;
+    margin: 80px auto;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.quiz-container h1 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+#question-container {
+    margin-bottom: 20px;
+}
+
+.answer-btn {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.answer-btn:hover {
+    background-color: #0056b3;
+}
+
+#next-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
