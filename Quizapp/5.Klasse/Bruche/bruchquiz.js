@@ -48,32 +48,55 @@ function selectAnswer(answer) {
         feedbackElement.style.color = "green";
         score++; // Punkt hinzufügen
         scoreElement.innerText = score;
-
+        
         // Antwortknöpfe entfernen und ein Bild hinzufügen
         questionContainer.innerHTML = ""; // Antwortknöpfe löschen
         const imageElement = document.createElement("img");
-        imageElement.src = "../Bilder/Richtig.jpg"; // Platzhalter für das Bild
+        imageElement.src = "../Bilder/Richtig.jpg"; // Bild für richtige Antwort
         imageElement.alt = "Richtige Antwort";
         imageElement.style.width = "300px"; // Optional: Größe anpassen
         imageElement.style.height = "auto";
         questionContainer.appendChild(imageElement);
+    
+        // Button ausblenden und nach 2 Sekunden wieder anzeigen
+        const nextBtn = document.getElementById("next-btn");
+        nextBtn.style.display = "none";  // Versteckt den Button
         
-        // Nach einer kurzen Verzögerung zur nächsten Frage wechseln
-        setTimeout(nextQuestion, 2000); // Wechselt nach 2 Sekunden zur nächsten Frage
+        setTimeout(() => {
+            // Nächste Frage anzeigen
+            nextQuestion();
+    
+            // Button wieder sichtbar machen
+            nextBtn.style.display = "inline-block";
+        }, 2000); // Button erscheint nach 2 Sekunden und es wird zur nächsten Frage gewechselt
+        
     } else {
-        // Feedback für falsche Antworten
+        // Feedback für falsche Antwort
         questionContainer.innerHTML = "";
-        feedbackElement.innerText = "Falsch! Schade beim nächsten Mal";
+        
+        // Korrektur: Button ausblenden
+        const nextBtn = document.getElementById("next-btn");
+        nextBtn.style.display = "none";  // Versteckt den Button
+        
+        feedbackElement.innerText = "Falsch! Schade, beim nächsten Mal";
         feedbackElement.style.color = "red";
-        imageElement = document.createElement("img");
-        imageElement.src = "../Bilder/Falsch.jpg";
+    
+        // Bild für die falsche Antwort
+        const imageElement = document.createElement("img");
+        imageElement.src = "../Bilder/Falsch.jpg"; // Bild für falsche Antwort
         imageElement.alt = "Falsche Antwort";
         imageElement.style.width = "300px"; // Optional: Größe anpassen
         imageElement.style.height = "auto";
         questionContainer.appendChild(imageElement);
-
-        // Nach einer kurzen Verzögerung zur nächsten Frage wechseln
-        setTimeout(nextQuestion, 2000); // Wechselt nach 2 Sekunden zur nächsten Frage
+    
+        // Button nach 2 Sekunden wieder anzeigen und zur nächsten Frage wechseln
+        setTimeout(() => {
+            // Nächste Frage anzeigen
+            nextQuestion();
+    
+            // Button wieder sichtbar machen
+            nextBtn.style.display = "inline-block";
+        }, 2000); // Button erscheint nach 2 Sekunden und es wird zur nächsten Frage gewechselt
     }
 }
 
@@ -117,9 +140,6 @@ function nextQuestion() {
         questionContainer.appendChild(imageElement);
     }
 }
-
-
-// Event-Listener für DOM-Content-Load entfernen, da das Quiz erst nach dem Laden der JSON gestartet wird
 
 // Starte das Quiz beim Laden der Seite
 document.addEventListener("DOMContentLoaded", showQuestion);
