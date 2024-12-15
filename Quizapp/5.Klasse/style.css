@@ -112,3 +112,12 @@ h2 {
     border: none;
     border-radius: 5px;
 }
+
+.image-small {
+    width: 300px;
+    height: 300px;
+    object-fit: cover; /* Stellt sicher, dass das Bild nicht verzerrt wird */
+    margin: 10px auto; /* Zentriert das Bild */
+    display: block;
+}
+
