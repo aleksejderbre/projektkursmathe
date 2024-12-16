@@ -1,0 +1,49 @@
+{
+    "questions": [
+        {
+            "question": "Welche Form hat keine Ecken und ist perfekt rund?",
+            "image": "../Bilder/kreis.png",
+            "answers": [
+                { "text": "Kreis", "correct": true },
+                { "text": "Dreieck", "correct": false },
+                { "text": "Quadrat", "correct": false }
+            ]
+        },
+        {
+            "question": "Welche Form hat drei Seiten und drei Ecken?",
+            "image": "../Bilder/dreieck.png",
+            "answers": [
+                { "text": "Dreieck", "correct": true },
+                { "text": "Rechteck", "correct": false },
+                { "text": "Kreis", "correct": false }
+            ]
+        },
+        {
+            "question": "Welche Form hat vier gleich lange Seiten und vier rechte Winkel?",
+            "image": "../Bilder/quadrat.jpg",
+            "answers": [
+                { "text": "Quadrat", "correct": true },
+                { "text": "Rechteck", "correct": false },
+                { "text": "Dreieck", "correct": false }
+            ]
+        },
+        {
+            "question": "Welche Form hat vier Seiten, aber nur gegenüberliegende Seiten sind gleich lang?",
+            "image": "../Bilder/rechteck.png",
+            "answers": [
+                { "text": "Rechteck", "correct": true },
+                { "text": "Quadrat", "correct": false },
+                { "text": "Kreis", "correct": false }
+            ]
+        },
+        {
+            "question": "Welche Form hat sechs Ecken?",
+            "image": "../Bilder/sechseck.png",
+            "answers": [
+                { "text": "Sechseck", "correct": true },
+                { "text": "Quadrat", "correct": false },
+                { "text": "Dreieck", "correct": false }
+            ]
+        }
+    ]
+}
