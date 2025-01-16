@@ -49,7 +49,7 @@ function selectAnswer(answer) {
         // Antwortknöpfe entfernen und ein Bild hinzufügen
         questionContainer.innerHTML = ""; // Antwortknöpfe löschen
         const imageElement = document.createElement("img");
-        imageElement.src = "./Bilder/Richtig.jpg"; // Platzhalter für das Bild
+        imageElement.src = "../Bilder/Richtig.jpg"; // Platzhalter für das Bild
         imageElement.alt = "Richtige Antwort";
         imageElement.style.width = "300px";
         questionContainer.appendChild(imageElement);
@@ -63,7 +63,7 @@ function selectAnswer(answer) {
         feedbackElement.style.color = "red";
 
         const imageElement = document.createElement("img");
-        imageElement.src = "./Bilder/Falsch.jpg";
+        imageElement.src = "../Bilder/Falsch.jpg";
         imageElement.alt = "Falsche Antwort";
         imageElement.style.width = "300px";
         questionContainer.appendChild(imageElement);
