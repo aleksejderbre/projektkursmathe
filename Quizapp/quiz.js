@@ -21,27 +21,12 @@ function showQuestion() {
     questionContainer.innerHTML = "";
 
     if (currentQuestionIndex < questions.length) {
-        const question = questions[currentQuestionIndex];
-
-        // Frage anzeigen
         const questionElement = document.createElement("h2");
-        questionElement.innerText = question.question;
+        questionElement.innerText = questions[currentQuestionIndex].question;
         questionContainer.appendChild(questionElement);
 
-        // Bild zur Frage anzeigen
-        if (question.image) {
-            const imageElement = document.createElement("img");
-            imageElement.src = question.image;
-            imageElement.alt = "Fragebild";
-            imageElement.style.width = "300px"; // Größe anpassen
-            imageElement.style.height = "auto";
-            imageElement.style.display = "block";
-            imageElement.style.margin = "10px auto";
-            questionContainer.appendChild(imageElement);
-        }
-
         // Antwortmöglichkeiten mischen
-        const shuffledAnswers = shuffleArray(question.answers);
+        const shuffledAnswers = shuffleArray(questions[currentQuestionIndex].answers);
 
         shuffledAnswers.forEach(answer => {
             const button = document.createElement("button");
@@ -53,6 +38,7 @@ function showQuestion() {
     }
 }
 
+// Antwortauswahl prüfen
 function selectAnswer(answer) {
     const feedbackElement = document.getElementById("feedback");
     const questionContainer = document.getElementById("question-container");
@@ -107,28 +93,38 @@ function selectAnswer(answer) {
 
 // Zur nächsten Frage wechseln
 function nextQuestion() {
-    currentQuestionIndex++;
-    if (currentQuestionIndex < questions.length) {
-        showQuestion();
-    } else {
-        endQuiz();
-    }
-}
-
-// Quiz beenden
-function endQuiz() {
     const questionContainer = document.getElementById("question-container");
     const feedbackElement = document.getElementById("feedback");
 
-    questionContainer.innerHTML = "";
-    feedbackElement.innerText = `Quiz beendet! Du hast ${score} von ${questions.length} Punkten erreicht.`;
-    feedbackElement.style.color = "blue";
+    currentQuestionIndex++;
+
+    if (currentQuestionIndex < questions.length) {
+        showQuestion();
+    } else {
+        questionContainer.innerHTML = "";
+        feedbackElement.innerText = "Glückwunsch, du hast das Quiz beendet!";
+        feedbackElement.style.color = "blue";
+
+        const imageElement = document.createElement("img");
+        if (score === questions.length) {
+            imageElement.src = "../../Bilder/Perfekt.jpg";
+            feedbackElement.innerText = "VOLLE PUNKTZAHL";
+        } else if (score > questions.length * 0.7) {
+            imageElement.src = "../../Bilder/highscore.jpg";
+        } else if (score > questions.length * 0.3) {
+            imageElement.src = "../../Bilder/lowscore.jpg";
+        } else {
+            imageElement.src = "../../Bilder/TryAgain.jpg";
+        }
+
+        imageElement.alt = "Quiz beendet";
+        imageElement.style.width = "280px";
+        imageElement.style.margin = "20px auto";
+        questionContainer.appendChild(imageElement);
+    }
 }
 
-// Hilfsfunktion zum Mischen der Antworten
+// Hilfsfunktion zum Zufällig Mischen der Antworten
 function shuffleArray(array) {
     return array.sort(() => Math.random() - 0.5);
 }
-
-// Quiz initialisieren
-startQuiz("./geometrischeformen.json");

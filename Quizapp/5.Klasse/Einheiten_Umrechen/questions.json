@@ -1,0 +1,84 @@
+{
+    "questions": [
+        {
+            "question": "Wie viele Millimeter sind 1 Zentimeter?",
+            "answers": [
+                { "text": "10", "correct": true },
+                { "text": "100", "correct": false },
+                { "text": "1", "correct": false }
+            ]
+        },
+        {
+            "question": "Wie viele Meter sind 100 Zentimeter?",
+            "answers": [
+                { "text": "1", "correct": true },
+                { "text": "10", "correct": false },
+                { "text": "100", "correct": false }
+            ]
+        },
+        {
+            "question": "Wie viele Kilometer sind 1000 Meter?",
+            "answers": [
+                { "text": "1", "correct": true },
+                { "text": "10", "correct": false },
+                { "text": "100", "correct": false }
+            ]
+        },
+        {
+            "question": "Wie viele Gramm sind in 1 Kilogramm?",
+            "answers": [
+                { "text": "1000", "correct": true },
+                { "text": "100", "correct": false },
+                { "text": "10", "correct": false }
+            ]
+        },
+        {
+            "question": "Wie viele Minuten sind in einer Stunde?",
+            "answers": [
+                { "text": "60", "correct": true },
+                { "text": "100", "correct": false },
+                { "text": "30", "correct": false }
+            ]
+        },
+        {
+            "question": "Wie viele Sekunden sind in einer Minute?",
+            "answers": [
+                { "text": "60", "correct": true },
+                { "text": "100", "correct": false },
+                { "text": "30", "correct": false }
+            ]
+        },
+        {
+            "question": "Wie viele Milliliter sind in 1 Liter?",
+            "answers": [
+                { "text": "1000", "correct": true },
+                { "text": "100", "correct": false },
+                { "text": "10", "correct": false }
+            ]
+        },
+        {
+            "question": "Wenn du 5000 Gramm hast, wie viele Kilogramm sind das?",
+            "answers": [
+                { "text": "5", "correct": true },
+                { "text": "50", "correct": false },
+                { "text": "500", "correct": false }
+            ]
+        },
+        {
+            "question": "Ein Auto fährt 60 Kilometer in einer Stunde. Wie viele Kilometer fährt es in 3 Stunden?",
+            "answers": [
+                { "text": "180", "correct": true },
+                { "text": "120", "correct": false },
+                { "text": "240", "correct": false }
+            ]
+        },
+        {
+            "question": "Wie viele Tage sind in 2 Wochen?",
+            "answers": [
+                { "text": "14", "correct": true },
+                { "text": "7", "correct": false },
+                { "text": "21", "correct": false }
+            ]
+        }
+    ]
+}
