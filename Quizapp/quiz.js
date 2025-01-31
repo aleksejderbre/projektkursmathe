@@ -13,7 +13,6 @@ function startQuiz(questionsUrl) {
         .catch(error => console.error("Fehler beim Laden der Fragen:", error));
 }
 
-// Frage anzeigen
 function showQuestion() {
     const questionContainer = document.getElementById("question-container");
     const feedbackElement = document.getElementById("feedback");
@@ -21,8 +20,18 @@ function showQuestion() {
     questionContainer.innerHTML = "";
 
     if (currentQuestionIndex < questions.length) {
+        const question = questions[currentQuestionIndex].question;
         const questionElement = document.createElement("h2");
-        questionElement.innerText = questions[currentQuestionIndex].question;
+
+        // Wenn die Frage Brüche enthält, rendern wir sie als HTML
+        if (question.includes("/")) {
+            const fractionHTML = question
+                .replace(/(\d+)\/(\d+)/g, "<sup>$1</sup>&frasl;<sub>$2</sub>");
+            questionElement.innerHTML = fractionHTML;
+        } else {
+            questionElement.innerText = question;
+        }
+
         questionContainer.appendChild(questionElement);
 
         // Antwortmöglichkeiten mischen
@@ -30,13 +39,17 @@ function showQuestion() {
 
         shuffledAnswers.forEach(answer => {
             const button = document.createElement("button");
-            button.innerText = answer.text;
+            button.innerHTML = answer.text.replace(
+                /(\d+)\/(\d+)/g,
+                "<sup>$1</sup>&frasl;<sub>$2</sub>"
+            ); // Brüche in den Antworten als HTML darstellen
             button.classList.add("answer-btn");
             button.onclick = () => selectAnswer(answer);
             questionContainer.appendChild(button);
         });
     }
 }
+
 
 // Antwortauswahl prüfen
 function selectAnswer(answer) {
@@ -123,6 +136,7 @@ function nextQuestion() {
         questionContainer.appendChild(imageElement);
     }
 }
+
 
 // Hilfsfunktion zum Zufällig Mischen der Antworten
 function shuffleArray(array) {

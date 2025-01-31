@@ -1,0 +1,94 @@
+{
+    "questions": [
+        {
+            "question": "Kürze den Bruch 12/16:",
+            "answers": [
+                { "text": "3/4", "correct": true },
+                { "text": "6/8", "correct": false },
+                { "text": "4/6", "correct": false },
+                { "text": "2/3", "correct": false }
+            ]
+        },
+        {
+            "question": "Erweitere den Bruch 5/7 mit 3:",
+            "answers": [
+                { "text": "15/21", "correct": true },
+                { "text": "10/14", "correct": false },
+                { "text": "8/11", "correct": false },
+                { "text": "12/18", "correct": false }
+            ]
+        },
+        {
+            "question": "Kürze den Bruch 18/24:",
+            "answers": [
+                { "text": "3/4", "correct": true },
+                { "text": "9/12", "correct": false },
+                { "text": "4/6", "correct": false },
+                { "text": "6/8", "correct": false }
+            ]
+        },
+        {
+            "question": "Erweitere den Bruch 2/5 mit 4:",
+            "answers": [
+                { "text": "8/20", "correct": true },
+                { "text": "6/10", "correct": false },
+                { "text": "4/15", "correct": false },
+                { "text": "10/25", "correct": false }
+            ]
+        },
+        {
+            "question": "Kürze den Bruch 27/36:",
+            "answers": [
+                { "text": "3/4", "correct": false },
+                { "text": "9/12", "correct": false },
+                { "text": "3/4", "correct": true },
+                { "text": "2/3", "correct": false }
+            ]
+        },
+        {
+            "question": "Erweitere den Bruch 7/9 mit 2:",
+            "answers": [
+                { "text": "14/18", "correct": true },
+                { "text": "21/27", "correct": false },
+                { "text": "10/18", "correct": false },
+                { "text": "12/16", "correct": false }
+            ]
+        },
+        {
+            "question": "Kürze den Bruch 16/20:",
+            "answers": [
+                { "text": "4/5", "correct": true },
+                { "text": "8/10", "correct": false },
+                { "text": "2/3", "correct": false },
+                { "text": "5/6", "correct": false }
+            ]
+        },
+        {
+            "question": "Erweitere den Bruch 4/11 mit 5:",
+            "answers": [
+                { "text": "20/55", "correct": true },
+                { "text": "15/44", "correct": false },
+                { "text": "25/55", "correct": false },
+                { "text": "16/55", "correct": false }
+            ]
+        },
+        {
+            "question": "Kürze den Bruch 45/60:",
+            "answers": [
+                { "text": "3/4", "correct": false },
+                { "text": "9/12", "correct": false },
+                { "text": "3/4", "correct": true },
+                { "text": "5/6", "correct": false }
+            ]
+        },
+        {
+            "question": "Erweitere den Bruch 3/8 mit 3:",
+            "answers": [
+                { "text": "9/24", "correct": true },
+                { "text": "6/16", "correct": false },
+                { "text": "12/32", "correct": false },
+                { "text": "18/40", "correct": false }
+            ]
+        }
+    ]
+}
