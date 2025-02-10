@@ -5,17 +5,17 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    background-image: url("./Bilder/hintergrund.jpg"); /* Hintergrundbild einfügen */
-    background-size: cover; /* Deckt den gesamten Bereich ab */
-    background-position: center; /* Zentriert das Bild */
+    min-height: 100vh;
+    background-image: url("./Bilder/hintergrund.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
 /* Container zentrieren und skalieren */
 .container {
-    width: 100%;
-    max-width: 390px; /* Maximale Breite für iPhone 12 */
-    padding: 5% 10%; /* Padding für kleinere Displays */
+    width: 90%;
+    max-width: 400px;
+    padding: 5vh 5vw;
     text-align: center;
 }
 
@@ -51,14 +51,17 @@ h2 {
 
 /* Back-Arrow Container Styling */
 .back-arrow {
-    position: absolute;
-    top: 20px;
-    left: 20px;
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    padding: 1%;
     font-size: 1.2em;
+    background-color: #4c9aee80;
+    border-radius: 30px;
 }
 
 .back-arrow a {
-    color: #007bff;
+    color: white;
     text-decoration: none;
     font-weight: bold;
     display: flex;
@@ -66,16 +69,15 @@ h2 {
 }
 
 .back-arrow a:hover {
-    color: #0056b3;
+    color: hsl(219, 100%, 90%);
     text-decoration: underline;
 }
 
 /* Quiz Container Styling */
 .quiz-container {
     max-width: 600px;
-    margin: 80px auto;
+    margin: 5vh auto;
     text-align: center;
-    font-family: 'Roboto', sans-serif;
 }
 
 .quiz-container h1 {
@@ -90,7 +92,7 @@ h2 {
 .answer-btn {
     display: block;
     margin: 10px auto;
-    padding: 10px 20px;
+    padding: 12px 24px;
     font-size: 1em;
     cursor: pointer;
     background-color: #007bff;
@@ -98,7 +100,6 @@ h2 {
     border: none;
     border-radius: 5px;
     transition: background-color 0.3s;
-    text-decoration: none;
 }
 
 .answer-btn:hover {
@@ -107,7 +108,7 @@ h2 {
 
 #next-btn {
     margin-top: 20px;
-    padding: 10px 20px;
+    padding: 12px 24px;
     font-size: 1em;
     cursor: pointer;
     background-color: #28a745;
@@ -120,33 +121,34 @@ h2 {
     width: 100%;
     max-width: 300px;
     height: auto;
-    object-fit: cover; /* Stellt sicher, dass das Bild nicht verzerrt wird */
-    margin: 10px auto; /* Zentriert das Bild */
+    object-fit: cover;
+    margin: 10px auto;
     display: block;
 }
 
-/* Responsives Design für größere Bildschirme */
+/* Responsives Design */
 @media (min-width: 768px) {
     .container {
-        padding: 5% 15%;
+        max-width: 500px;
+        padding: 6vh 8vw;
     }
 
     h1 {
-        font-size: 2.5em; /* Größere Schrift auf größeren Bildschirmen */
+        font-size: 2.5em;
     }
 
     h2 {
-        font-size: 1.5em; /* Größere Überschrift auf größeren Bildschirmen */
+        font-size: 1.5em;
     }
 }
 
 @media (min-width: 1024px) {
     .container {
-        max-width: 600px; /* Container wird breiter auf Tablets und Desktops */
+        max-width: 600px;
     }
 
     h1 {
-        font-size: 3em; /* Noch größere Schrift auf großen Bildschirmen */
+        font-size: 3em;
     }
 
     h2 {
@@ -154,6 +156,6 @@ h2 {
     }
 
     .answer-btn {
-        padding: 15px 30px; /* Größere Buttons für Tablets und Desktops */
+        padding: 15px 30px;
     }
 }
