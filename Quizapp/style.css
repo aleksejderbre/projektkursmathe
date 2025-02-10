@@ -9,54 +9,115 @@ body {
     background-image: url("./Bilder/hintergrund.jpg");
     background-size: cover;
     background-position: center;
+    position: relative;
 }
 
-/* Container zentrieren und skalieren */
+/* Leicht dunkles Overlay für bessere Lesbarkeit */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 0;
+}
+
+/* Container für Inhalte */
 .container {
-    width: 90%;
-    max-width: 400px;
-    padding: 5vh 5vw;
+    position: relative;
+    z-index: 2;
     text-align: center;
+    padding: 20px;
 }
 
-/* Header Styling */
+/* Überschriften */
 h1 {
-    color: #333;
-    font-size: 2em;
-    margin-bottom: 10px;
+    color: #ffcc00; /* Warmes Goldgelb */
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 h2 {
-    color: #555;
-    font-size: 1.2em;
-    margin-bottom: 20px;
+    color: #ffffffb5;
+    font-size: 1.5em;
+    background-color: rgba(24, 80, 137, 0.498);
+    padding: 10px;
+    border-radius: 8px;
+    display: inline-block;
+    margin: 10px 0;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 /* Vertikale Links als Kästchen */
 .links a {
     display: block;
-    background-color: #007bff;
-    color: white;
+    background-color: #00448db7;
+    color: rgb(196, 196, 196);
     text-decoration: none;
     padding: 15px;
     border-radius: 8px;
     font-size: 1.1em;
     margin: 10px 0;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.2s ease;;
 }
 
 .links a:hover {
     background-color: #0056b3;
+    transform: scale(1.05);
 }
 
-/* Back-Arrow Container Styling */
+/* Quiz-Buttons */
+.answer-btn {
+    display: block;
+    background-color: #0073e6;
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    padding-inline: 30px;
+    border-radius: 8px;
+    font-size: 1.2em;
+    margin: 10px auto;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    border: none;
+    text-align: center;
+    width: fit-content
+}
+
+.answer-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+#next-btn {
+    margin-top: 20px;
+    padding: 12px 24px;
+    font-size: 1.2em;
+    cursor: pointer;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#next-btn:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+/* Zurück-Button */
 .back-arrow {
     position: fixed;
     top: 15px;
     left: 15px;
     padding: 1%;
     font-size: 1.2em;
-    background-color: #4c9aee80;
+    background-color: rgba(0, 52, 107, 0.5);
     border-radius: 30px;
 }
 
@@ -73,50 +134,7 @@ h2 {
     text-decoration: underline;
 }
 
-/* Quiz Container Styling */
-.quiz-container {
-    max-width: 600px;
-    margin: 5vh auto;
-    text-align: center;
-}
-
-.quiz-container h1 {
-    font-size: 1.8em;
-    margin-bottom: 20px;
-}
-
-#question-container {
-    margin-bottom: 20px;
-}
-
-.answer-btn {
-    display: block;
-    margin: 10px auto;
-    padding: 12px 24px;
-    font-size: 1em;
-    cursor: pointer;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-.answer-btn:hover {
-    background-color: #0056b3;
-}
-
-#next-btn {
-    margin-top: 20px;
-    padding: 12px 24px;
-    font-size: 1em;
-    cursor: pointer;
-    background-color: #28a745;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-}
-
+/* Bilder */
 .image-small {
     width: 100%;
     max-width: 300px;
@@ -124,6 +142,8 @@ h2 {
     object-fit: cover;
     margin: 10px auto;
     display: block;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Responsives Design */
