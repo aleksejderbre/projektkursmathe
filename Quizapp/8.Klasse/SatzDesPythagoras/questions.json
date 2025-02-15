@@ -1,0 +1,86 @@
+{
+  "questions": [
+    {
+      "question": "Der Satz des Pythagoras gilt nur für rechtwinklige Dreiecke.",
+      "answers": [
+        { "text": "Wahr", "correct": true },
+        { "text": "Falsch", "correct": false }
+      ]
+    },
+    {
+      "question": "Wie lautet die allgemeine Formel des Satzes des Pythagoras?",
+      "answers": [
+        { "text": "a² + b² = c²", "correct": true },
+        { "text": "a² + c² = b²", "correct": false },
+        { "text": "a² - b² = c²", "correct": false },
+        { "text": "a² + b² = c", "correct": false }
+      ]
+    },
+    {
+      "question": "Ein Dreieck mit den Seitenlängen 3 cm, 4 cm und 5 cm ist ein rechtwinkliges Dreieck.",
+      "answers": [
+        { "text": "Wahr", "correct": true },
+        { "text": "Falsch", "correct": false }
+      ]
+    },
+    {
+      "question": "Welche der folgenden Zahlenkombinationen können die Seiten eines rechtwinkligen Dreiecks sein?",
+      "answers": [
+        { "text": "5, 12, 13", "correct": true },
+        { "text": "6, 8, 10", "correct": true },
+        { "text": "7, 9, 12", "correct": false },
+        { "text": "8, 15, 17", "correct": true }
+      ]
+    },
+    {
+      "question": "Ein Dreieck hat die Kathetenlängen 6 cm und 8 cm. Wie lang ist die Hypotenuse?",
+      "answers": [
+        { "text": "10 cm", "correct": true },
+        { "text": "12 cm", "correct": false },
+        { "text": "14 cm", "correct": false },
+        { "text": "8 cm", "correct": false }
+      ]
+    },
+    {
+      "question": "Welche Seite wird in der Formel des Satzes des Pythagoras immer als \"c\" bezeichnet?",
+      "answers": [
+        { "text": "Die längste Seite des Dreiecks", "correct": true },
+        { "text": "Eine der beiden kürzeren Seiten", "correct": false },
+        { "text": "Die Seite gegenüber dem kleinsten Winkel", "correct": false },
+        { "text": "Jede beliebige Seite", "correct": false }
+      ]
+    },
+    {
+      "question": "Ein Dreieck hat die Seitenlängen 10 cm, 24 cm und 26 cm. Ist es rechtwinklig?",
+      "answers": [
+        { "text": "Ja", "correct": true },
+        { "text": "Nein", "correct": false }
+      ]
+    },
+    {
+      "question": "Der Satz des Pythagoras kann auch in dreidimensionalen Körpern angewendet werden.",
+      "answers": [
+        { "text": "Wahr", "correct": true },
+        { "text": "Falsch", "correct": false }
+      ]
+    },
+    {
+      "question": "Welche der folgenden Formeln kann man aus dem Satz des Pythagoras ableiten, wenn man die Länge einer Kathete berechnen will?",
+      "answers": [
+        { "text": "a = √(c² - b²)", "correct": true },
+        { "text": "b = √(a² + c²)", "correct": false },
+        { "text": "c = √(a² - b²)", "correct": false },
+        { "text": "a = √(c² + b²)", "correct": false }
+      ]
+    },
+    {
+      "question": "Welche der folgenden Begriffe sind mit dem Satz des Pythagoras verbunden?",
+      "answers": [
+        { "text": "Rechtwinkliges Dreieck", "correct": true },
+        { "text": "Hypotenuse", "correct": true },
+        { "text": "Kathete", "correct": true },
+        { "text": "Parallelogramm", "correct": false }
+      ]
+    }
+  ]
+}

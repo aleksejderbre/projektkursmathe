@@ -1,0 +1,112 @@
+{
+    "questions": [
+      {
+        "question": "Gleichung: 3x + 5 = 14. Was ist der erste Schritt?",
+        "answers": [
+          { "text": "3x = 14 - 5", "correct": true },
+          { "text": "3x = 14 + 5", "correct": false },
+          { "text": "3x = 14", "correct": false },
+          { "text": "x = 14 - 5", "correct": false }
+        ]
+      },
+      {
+        "question": "Gleichung: 3x = 14 - 5. Was ergibt die Umformung?",
+        "answers": [
+          { "text": "3x = 9", "correct": true },
+          { "text": "3x = 19", "correct": false },
+          { "text": "3x = 5", "correct": false },
+          { "text": "3x = 3", "correct": false }
+        ]
+      },
+      {
+        "question": "Gleichung: 3x = 9. Was ist der nächste Schritt?",
+        "answers": [
+          { "text": "x = 9 : 3", "correct": true },
+          { "text": "x = 9 × 3", "correct": false },
+          { "text": "x = 9 + 3", "correct": false },
+          { "text": "x = 9 - 3", "correct": false }
+        ]
+      },
+      {
+        "question": "Gleichung: x = 9 : 3. Was ist die Lösung für x?",
+        "answers": [
+          { "text": "x = 3", "correct": true },
+          { "text": "x = 6", "correct": false },
+          { "text": "x = 2", "correct": false },
+          { "text": "x = 9", "correct": false }
+        ]
+      },
+      {
+        "question": "Gleichung: 5x - 7 = 18. Was ist der erste Schritt?",
+        "answers": [
+          { "text": "5x = 18 + 7", "correct": true },
+          { "text": "5x = 18 - 7", "correct": false },
+          { "text": "5x = 7 - 18", "correct": false },
+          { "text": "x = 18 + 7", "correct": false }
+        ]
+      },
+      {
+        "question": "Gleichung: 5x = 18 + 7. Was ergibt die Umformung?",
+        "answers": [
+          { "text": "5x = 25", "correct": true },
+          { "text": "5x = 11", "correct": false },
+          { "text": "5x = 35", "correct": false },
+          { "text": "5x = 5", "correct": false }
+        ]
+      },
+      {
+        "question": "Gleichung: 5x = 25. Was ist der nächste Schritt?",
+        "answers": [
+          { "text": "x = 25 : 5", "correct": true },
+          { "text": "x = 25 + 5", "correct": false },
+          { "text": "x = 25 - 5", "correct": false },
+          { "text": "x = 25 × 5", "correct": false }
+        ]
+      },
+      {
+        "question": "Gleichung: x = 25 : 5. Was ist die Lösung für x?",
+        "answers": [
+          { "text": "x = 5", "correct": true },
+          { "text": "x = 10", "correct": false },
+          { "text": "x = 4", "correct": false },
+          { "text": "x = 3", "correct": false }
+        ]
+      },
+      {
+        "question": "Gleichung: 2(x - 3) = 10. Was ist der erste Schritt?",
+        "answers": [
+          { "text": "x - 3 = 10 : 2", "correct": true },
+          { "text": "x - 3 = 10 × 2", "correct": false },
+          { "text": "x - 3 = 10 - 2", "correct": false },
+          { "text": "x - 3 = 10 + 2", "correct": false }
+        ]
+      },
+      {
+        "question": "Gleichung: x - 3 = 10 : 2. Was ergibt die Umformung?",
+        "answers": [
+          { "text": "x - 3 = 5", "correct": true },
+          { "text": "x - 3 = 8", "correct": false },
+          { "text": "x - 3 = 12", "correct": false },
+          { "text": "x - 3 = 4", "correct": false }
+        ]
+      },
+      {
+        "question": "Gleichung: x - 3 = 5. Was ist der nächste Schritt?",
+        "answers": [
+          { "text": "x = 5 + 3", "correct": true },
+          { "text": "x = 5 - 3", "correct": false },
+          { "text": "x = 5 × 3", "correct": false },
+          { "text": "x = 5 : 3", "correct": false }
+        ]
+      },
+      {
+        "question": "Gleichung: x = 5 + 3. Was ist die Lösung für x?",
+        "answers": [
+          { "text": "x = 8", "correct": true },
+          { "text": "x = 6", "correct": false },
+          { "text": "x = 3", "correct": false },
+          { "text": "x = 10", "correct": false }
+        ]
+      }
+    ]
+  }

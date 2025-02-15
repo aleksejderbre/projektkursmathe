@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>9. Klasse - Gleichungen lösen</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="main-title">Mathe: Gleichungen lösen</h1>
+
+        <div class="back-arrow">
+            <a href="../10.klasse.html">&#8592; Zurück</a>
+        </div>
+
+        <div style="margin-top: 10%;" class="content">
+            <h2 class="section-title">Was ist eine Gleichung?</h2>
+            <p class="text">
+                Eine Gleichung ist eine mathematische Aussage, die zwei Terme mit einem Gleichheitszeichen verbindet.
+            </p>
+            <p class="formula">
+                Beispiel: \( 3x + 5 = 11 \)
+            </p>
+            <p class="text">
+                Ziel ist es, die Variable \( x \) zu bestimmen.
+            </p>
+
+            <h2 class="section-title">Arten von Gleichungen</h2>
+            <ul class="list">
+                <li><b>Lineare Gleichungen:</b> \( ax + b = 0 \)</li>
+                <li><b>Quadratische Gleichungen:</b> \( ax^2 + bx + c = 0 \)</li>
+                <li><b>Bruchgleichungen:</b> Gleichungen mit Brüchen.</li>
+                <li><b>Exponentialgleichungen:</b> Gleichungen mit Potenzen, z.B. \( 2^x = 8 \).</li>
+            </ul>
+
+            <h2 class="section-title">Lineare Gleichungen lösen</h2>
+            <p class="text">
+                Beispiel: \( 3x + 5 = 11 \)
+            </p>
+            <ol class="list">
+                <li>Subtrahiere 5 auf beiden Seiten:  
+                    \( 3x = 6 \)</li>
+                <li>Teile durch 3:  
+                    \( x = 2 \)</li>
+            </ol>
+
+            <h2 class="section-title">Quadratische Gleichungen lösen</h2>
+            <p class="text">
+                Eine quadratische Gleichung hat die Form:
+            </p>
+            <p class="formula">
+                \( ax^2 + bx + c = 0 \)
+            </p>
+
+            <h3 class="section-title">1. Faktorisieren</h3>
+            <p class="text">
+                Beispiel: \( x^2 - 5x + 6 = 0 \)  
+                Schreibe es als Produkt:  
+                \( (x - 2)(x - 3) = 0 \)  
+                Nullstellen: \( x_1 = 2, x_2 = 3 \)
+            </p>
+
+            <h3 class="section-title">2. pq-Formel</h3>
+            <p class="formula">
+                \( x_{1,2} = -\frac{p}{2} \pm \sqrt{\left(\frac{p}{2}\right)^2 - q} \)
+            </p>
+            <p class="text">
+                Beispiel: \( x^2 - 4x + 3 = 0 \)
+            </p>
+            <p class="text">
+                \( x_{1,2} = \frac{4}{2} \pm \sqrt{\left(\frac{4}{2}\right)^2 - 3} \)  
+                \( x_{1,2} = 2 \pm \sqrt{1} \)  
+                Nullstellen: \( x_1 = 3, x_2 = 1 \)
+            </p>
+
+            <h3 class="section-title">3. Mitternachtsformel</h3>
+            <p class="formula">
+                \( x_{1,2} = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a} \)
+            </p>
+            <p class="text">
+                Beispiel: \( 2x^2 - 4x - 6 = 0 \)
+            </p>
+            <p class="text">
+                \( x_{1,2} = \frac{4 \pm \sqrt{(-4)^2 - 4(2)(-6)}}{2(2)} \)  
+                \( x_{1,2} = \frac{4 \pm \sqrt{16 + 48}}{4} \)  
+                \( x_{1,2} = \frac{4 \pm \sqrt{64}}{4} \)  
+                \( x_{1,2} = \frac{4 \pm 8}{4} \)  
+                \( x_1 = 3, x_2 = -1 \)
+            </p>
+
+            <h2 class="section-title">Sonderfälle</h2>
+            <ul class="list">
+                <li><b>Keine Lösung:</b> Falls die Diskriminante negativ ist.</li>
+                <li><b>Eine Lösung:</b> Falls die Diskriminante 0 ist.</li>
+            </ul>
+
+            <h2 class="section-title">Tipps & Tricks</h2>
+            <ul class="list">
+                <li>Versuche immer zuerst, die Gleichung umzuformen.</li>
+                <li>Prüfe die Lösungen, indem du sie in die ursprüngliche Gleichung einsetzt.</li>
+                <li>Merke dir die pq-Formel und die Mitternachtsformel für quadratische Gleichungen.</li>
+            </ul>
+
+            <div class="quiz-link">
+                <a href="quiz.html" class="answer-btn">Teste dein Wissen über Gleichungen &rarr;</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

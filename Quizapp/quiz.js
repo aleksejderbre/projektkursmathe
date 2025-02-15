@@ -1,14 +1,14 @@
 let questions = [];
 let currentQuestionIndex = 0;
 let score = 0;
+let correctAnswerText; // Deklariere correctAnswerText außerhalb der Funktionen
 
-// Quiz starten (Fragen laden und mischen)
 function startQuiz(questionsUrl) {
     fetch(questionsUrl)
         .then(response => response.json())
         .then(data => {
-            questions = data.questions.sort(() => Math.random()); // Fragen mischen
-            showQuestion(); // Quiz starten, nachdem die Fragen geladen wurden
+            questions = data.questions.sort(() => Math.random());
+            showQuestion();
         })
         .catch(error => console.error("Fehler beim Laden der Fragen:", error));
 }
@@ -16,17 +16,18 @@ function startQuiz(questionsUrl) {
 function showQuestion() {
     const questionContainer = document.getElementById("question-container");
     const feedbackElement = document.getElementById("feedback");
-    feedbackElement.innerText = ""; // Feedback zurücksetzen
+
+    feedbackElement.innerText = ""; // Feedback-Text leeren
+    feedbackElement.style.display = "block"; // Sicherstellen, dass es sichtbar bleibt
+    feedbackElement.classList.remove("correct-answer", "wrong-answer"); // Klassen entfernen
     questionContainer.innerHTML = "";
 
     if (currentQuestionIndex < questions.length) {
         const question = questions[currentQuestionIndex].question;
         const questionElement = document.createElement("h2");
 
-        // Wenn die Frage Brüche enthält, rendern wir sie als HTML
         if (question.includes("/")) {
-            const fractionHTML = question
-                .replace(/(\d+)\/(\d+)/g, "<sup>$1</sup>&frasl;<sub>$2</sub>");
+            const fractionHTML = question.replace(/(\d+)\/(\d+)/g, "<sup>$1</sup>&frasl;<sub>$2</sub>");
             questionElement.innerHTML = fractionHTML;
         } else {
             questionElement.innerText = question;
@@ -34,77 +35,63 @@ function showQuestion() {
 
         questionContainer.appendChild(questionElement);
 
-        // Antwortmöglichkeiten mischen
         const shuffledAnswers = shuffleArray(questions[currentQuestionIndex].answers);
+        correctAnswerText = questions[currentQuestionIndex].answers.find(answer => answer.correct).text;
 
         shuffledAnswers.forEach(answer => {
             const button = document.createElement("button");
-            button.innerHTML = answer.text.replace(
-                /(\d+)\/(\d+)/g,
-                "<sup>$1</sup>&frasl;<sub>$2</sub>"
-            ); // Brüche in den Antworten als HTML darstellen
+            button.innerHTML = answer.text.replace(/(\d+)\/(\d+)/g, "<sup>$1</sup>&frasl;<sub>$2</sub>");
             button.classList.add("answer-btn");
-            button.onclick = () => selectAnswer(answer);
+            button.onclick = () => selectAnswer(answer, correctAnswerText);
             questionContainer.appendChild(button);
         });
     }
 }
 
-
-// Antwortauswahl prüfen
-function selectAnswer(answer) {
+function selectAnswer(answer, correctAnswerText) {
     const feedbackElement = document.getElementById("feedback");
     const questionContainer = document.getElementById("question-container");
     const scoreElement = document.getElementById("score");
-
-    // Button ausblenden
     const nextBtn = document.getElementById("next-btn");
-    nextBtn.style.display = "none"; // Versteckt den Button, nachdem eine Antwort ausgewählt wurde
+
+    nextBtn.style.display = "none"; // nextBtn verstecken
+
+    feedbackElement.classList.remove("correct-answer", "wrong-answer");
 
     if (answer.correct) {
-        // Feedback für die richtige Antwort
         feedbackElement.innerText = "RICHTIG!";
-        feedbackElement.style.color = "green";
-        score++; // Punkt hinzufügen
+        feedbackElement.classList.add("correct-answer");
+        score++;
         scoreElement.innerText = score;
-        
-        // Antwortknöpfe entfernen und ein Bild hinzufügen
-        questionContainer.innerHTML = ""; // Antwortknöpfe löschen
+
+        questionContainer.innerHTML = "";
         const imageElement = document.createElement("img");
-        imageElement.src = "../../Bilder/Richtig.jpg"; // Bild für richtige Antwort
+        imageElement.src = "../../Bilder/Richtig.jpg";
         imageElement.alt = "Richtige Antwort";
-        imageElement.style.width = "300px"; // Optional: Größe anpassen
+        imageElement.style.width = "300px";
         imageElement.style.height = "auto";
         questionContainer.appendChild(imageElement);
 
     } else {
-        // Feedback für falsche Antwort
+        feedbackElement.innerText = `Falsch! Schade, beim nächsten Mal. Richtige Antwort: ${correctAnswerText}`;
+        feedbackElement.classList.add("wrong-answer");
+
         questionContainer.innerHTML = "";
-        
-        feedbackElement.innerText = "Falsch! Schade, beim nächsten Mal";
-        feedbackElement.style.color = "red";
-    
-        // Bild für die falsche Antwort
         const imageElement = document.createElement("img");
-        imageElement.src = "../../Bilder/Falsch.jpg"; // Bild für falsche Antwort
+        imageElement.src = "../../Bilder/Falsch.jpg";
         imageElement.alt = "Falsche Antwort";
-        imageElement.style.width = "300px"; // Optional: Größe anpassen
+        imageElement.style.width = "300px";
         imageElement.style.height = "auto";
         questionContainer.appendChild(imageElement);
     }
-    
-    // Button nach 2 Sekunden wieder anzeigen und zur nächsten Frage wechseln
-    setTimeout(() => {
-        // Nächste Frage anzeigen
-        nextQuestion();
 
-        // Button wieder sichtbar machen
+    setTimeout(() => {
+        feedbackElement.innerHTML = "";
         nextBtn.style.display = "inline-block";
-    }, 2000); // Button erscheint nach 2 Sekunden und es wird zur nächsten Frage gewechselt
+        nextQuestion(); // Die nächste Frage anzeigen
+    }, 2500);
 }
 
-
-// Zur nächsten Frage wechseln
 function nextQuestion() {
     const questionContainer = document.getElementById("question-container");
     const feedbackElement = document.getElementById("feedback");
@@ -137,8 +124,6 @@ function nextQuestion() {
     }
 }
 
-
-// Hilfsfunktion zum Zufällig Mischen der Antworten
 function shuffleArray(array) {
     return array.sort(() => Math.random() - 0.5);
 }

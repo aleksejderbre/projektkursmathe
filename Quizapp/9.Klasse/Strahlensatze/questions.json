@@ -1,0 +1,82 @@
+{
+  "questions": [
+    {
+      "question": "Was ist die Grundvoraussetzung für die Anwendung der Strahlensätze?",
+      "answers": [
+        { "text": "Zwei sich schneidende Geraden und zwei parallele Linien", "correct": true },
+        { "text": "Drei beliebige Geraden", "correct": false },
+        { "text": "Zwei Dreiecke", "correct": false },
+        { "text": "Ein rechter Winkel", "correct": false }
+      ]
+    },
+    {
+      "question": "Die Strahlensätze können nur in Dreiecken angewendet werden.",
+      "answers": [
+        { "text": "Wahr", "correct": false },
+        { "text": "Falsch", "correct": true }
+      ]
+    },
+    {
+      "question": "Wenn zwei parallele Linien zwei sich schneidende Geraden schneiden, wie verhalten sich die entsprechenden Streckenabschnitte?",
+      "answers": [
+        { "text": "Sie sind proportional zueinander", "correct": true },
+        { "text": "Sie sind gleich lang", "correct": false },
+        { "text": "Sie sind zufällig verteilt", "correct": false },
+        { "text": "Es gibt keine Beziehung zwischen ihnen", "correct": false }
+      ]
+    },
+    {
+      "question": "Der erste Strahlensatz bezieht sich auf Verhältnisse von Strecken auf den Strahlen.",
+      "answers": [
+        { "text": "Wahr", "correct": true },
+        { "text": "Falsch", "correct": false }
+      ]
+    },
+    {
+      "question": "Der zweite Strahlensatz vergleicht das Verhältnis von Strecken auf den Strahlen mit den Abschnitten auf den Parallelen.",
+      "answers": [
+        { "text": "Wahr", "correct": true },
+        { "text": "Falsch", "correct": false }
+      ]
+    },
+    {
+      "question": "Zwei Strahlen werden von parallelen Linien geschnitten. Die Abschnitte auf den Strahlen sind 4 cm und 6 cm lang. Die entsprechende Strecke auf einer Parallelen ist 10 cm lang. Wie lang ist die andere Strecke auf der Parallelen?",
+      "answers": [
+        { "text": "15 cm", "correct": true },
+        { "text": "10 cm", "correct": false },
+        { "text": "12 cm", "correct": false },
+        { "text": "20 cm", "correct": false }
+      ]
+    },
+    {
+      "question": "Zwei Strecken auf einem Strahl sind 5 cm und 8 cm lang. Die entsprechende Strecke auf dem anderen Strahl ist 12 cm lang. Wie lang ist die andere Strecke auf dem zweiten Strahl?",
+      "answers": [
+        { "text": "19.2 cm", "correct": true },
+        { "text": "7.5 cm", "correct": false },
+        { "text": "15 cm", "correct": false },
+        { "text": "20 cm", "correct": false }
+      ]
+    },
+    {
+      "question": "Die Berechnung der Höhe eines Baumes durch Messung seines Schattens hat nichts mit Strahlensätzen zu tun.",
+      "answers": [
+        { "text": "Wahr", "correct": false },
+        { "text": "Falsch", "correct": true }
+      ]
+    },
+    {
+      "question": "Die Verkleinerung oder Vergrößerung einer Zeichnung im Verhältnis 1:2 hat etwas mit Strahlensätzen zu tun.",
+      "answers": [
+        { "text": "Wahr", "correct": true },
+        { "text": "Falsch", "correct": false }
+      ]
+    },
+    {
+      "question": "Die Teilung einer Strecke in drei gleich lange Teile hat etwas mit Strahlensätzen zu tun.",
+      "answers": [
+        { "text": "Wahr", "correct": true },
+        { "text": "Falsch", "correct": false }
+      ]
+    }
+  ]
+}

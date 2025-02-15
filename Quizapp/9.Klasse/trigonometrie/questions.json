@@ -1,0 +1,82 @@
+{
+  "questions": [
+    {
+      "question": "Welche Seite in einem rechtwinkligen Dreieck wird als Hypotenuse bezeichnet?",
+      "answers": [
+        { "text": "Die längste Seite", "correct": true },
+        { "text": "Die Seite gegenüber dem rechten Winkel", "correct": true },
+        { "text": "Die Seite neben dem betrachteten Winkel", "correct": false },
+        { "text": "Die Seite gegenüber dem betrachteten Winkel", "correct": false }
+      ]
+    },
+    {
+      "question": "Sinus ist definiert als Gegenkathete / Hypotenuse.",
+      "answers": [
+        { "text": "Wahr", "correct": true },
+        { "text": "Falsch", "correct": false }
+      ]
+    },
+    {
+      "question": "Kosinus ist definiert als Ankathete / Hypotenuse.",
+      "answers": [
+        { "text": "Wahr", "correct": true },
+        { "text": "Falsch", "correct": false }
+      ]
+    },
+    {
+      "question": "Tangens ist definiert als Gegenkathete / Ankathete.",
+      "answers": [
+        { "text": "Wahr", "correct": true },
+        { "text": "Falsch", "correct": false }
+      ]
+    },
+    {
+      "question": "Ein rechtwinkliges Dreieck hat eine Hypotenuse von 10 cm und einen Winkel von 30 Grad. Wie lang ist die Gegenkathete?",
+      "answers": [
+        { "text": "5 cm", "correct": true },
+        { "text": "8.66 cm", "correct": false },
+        { "text": "10 cm", "correct": false },
+        { "text": "20 cm", "correct": false }
+      ]
+    },
+    {
+      "question": "Ein rechtwinkliges Dreieck hat eine Ankathete von 8 cm und eine Gegenkathete von 6 cm. Wie groß ist der Winkel?",
+      "answers": [
+        { "text": "36.87 Grad", "correct": true },
+        { "text": "45 Grad", "correct": false },
+        { "text": "53.13 Grad", "correct": false },
+        { "text": "60 Grad", "correct": false }
+      ]
+    },
+    {
+      "question": "sin(alpha) = cos(90 - alpha)",
+      "answers": [
+        { "text": "Wahr", "correct": true },
+        { "text": "Falsch", "correct": false }
+      ]
+    },
+    {
+      "question": "Die Werte für Sinus und Kosinus können größer als 1 sein.",
+      "answers": [
+        { "text": "Wahr", "correct": false },
+        { "text": "Falsch", "correct": true }
+      ]
+    },
+    {
+      "question": "Tangens kann jeden Wert annehmen.",
+      "answers": [
+        { "text": "Wahr", "correct": true },
+        { "text": "Falsch", "correct": false }
+      ]
+    },
+    {
+      "question": "In einem rechtwinkligen Dreieck ist die Hypotenuse 13 cm lang und eine Kathete 5 cm. Wie lang ist die andere Kathete?",
+      "answers": [
+        { "text": "12 cm", "correct": true },
+        { "text": "8 cm", "correct": false },
+        { "text": "10 cm", "correct": false },
+        { "text": "18 cm", "correct": false }
+      ]
+    }
+  ]
+}

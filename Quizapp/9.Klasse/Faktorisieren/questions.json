@@ -1,0 +1,94 @@
+{
+    "questions": [
+      {
+        "question": "Welche der folgenden Terme ist ein Beispiel für einen Term, den man faktorisieren kann?",
+        "answers": [
+          { "text": "5x + 2", "correct": false },
+          { "text": "3x² - 9x", "correct": true },
+          { "text": "7y - 4z", "correct": false },
+          { "text": "11", "correct": false }
+        ]
+      },
+      {
+        "question": "Was bedeutet Faktorisieren?",
+        "answers": [
+          { "text": "Einen Term in eine Summe umwandeln.", "correct": false },
+          { "text": "Einen Term in ein Produkt umwandeln.", "correct": true },
+          { "text": "Einen Term quadrieren.", "correct": false },
+          { "text": "Einen Term durch eine Zahl dividieren.", "correct": false }
+        ]
+      },
+      {
+        "question": "Welche der folgenden Methoden ist eine grundlegende Art des Faktorisierens?",
+        "answers": [
+          { "text": "Division", "correct": false },
+          { "text": "Ausklammern", "correct": true },
+          { "text": "Subtraktion", "correct": false },
+          { "text": "Multiplikation", "correct": false }
+        ]
+      },
+      {
+        "question": "Was ist das Ergebnis des Ausklammerns von 4 aus dem Term 8x + 12?",
+        "answers": [
+          { "text": "4(2x + 8)", "correct": false },
+          { "text": "4(2x + 3)", "correct": true },
+          { "text": "8(x + 12)", "correct": false },
+          { "text": "12(8x + 1)", "correct": false }
+        ]
+      },
+      {
+        "question": "Welche binomische Formel passt zu dem Term x² + 6x + 9?",
+        "answers": [
+          { "text": "(x + 3)²", "correct": true },
+          { "text": "(x - 3)²", "correct": false },
+          { "text": "(x + 9)²", "correct": false },
+          { "text": "(x - 9)²", "correct": false }
+        ]
+      },
+      {
+        "question": "Welche binomische Formel passt zu dem Term x² - 4?",
+        "answers": [
+          { "text": "(x + 2)²", "correct": false },
+          { "text": "(x - 2)²", "correct": false },
+          { "text": "(x + 2)(x - 2)", "correct": true },
+          { "text": "(x + 4)(x - 4)", "correct": false }
+        ]
+      },
+      {
+        "question": "Wie lautet die faktorisierte Form von x² - 10x + 25?",
+        "answers": [
+          { "text": "(x + 5)²", "correct": false },
+          { "text": "(x - 5)²", "correct": true },
+          { "text": "(x + 5)(x - 5)", "correct": false },
+          { "text": "(x + 10)(x - 10)", "correct": false }
+        ]
+      },
+      {
+        "question": "Welche Faktoren hat die quadratische Gleichung x² + 5x + 6?",
+        "answers": [
+          { "text": "(x + 2)(x + 3)", "correct": true },
+          { "text": "(x + 1)(x + 6)", "correct": false },
+          { "text": "(x - 2)(x - 3)", "correct": false },
+          { "text": "(x - 1)(x - 6)", "correct": false }
+        ]
+      },
+      {
+        "question": "Wie lautet die faktorisierte Form von 2x² + 4x?",
+        "answers": [
+          { "text": "2x(x + 4)", "correct": false },
+          { "text": "2x(x + 2)", "correct": true },
+          { "text": "4x(x + 2)", "correct": false },
+          { "text": "4x(x + 1)", "correct": false }
+        ]
+      },
+      {
+        "question": "Welche der folgenden Terme ist nicht vollständig faktorisiert?",
+        "answers": [
+          { "text": "3x(x - 2)", "correct": false },
+          { "text": "x(x + 5)", "correct": false },
+          { "text": "2(x² + 4)", "correct": true },
+          { "text": "(x + 1)(x - 1)", "correct": false }
+        ]
+      }
+    ]
+  }

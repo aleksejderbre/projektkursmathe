@@ -1,0 +1,94 @@
+{
+    "questions": [
+      {
+        "question": "Welche der folgenden Gleichungen ist eine quadratische Funktion?",
+        "answers": [
+          { "text": "y = 2x + 3", "correct": false },
+          { "text": "y = x² - 4x + 1", "correct": true },
+          { "text": "y = 3x³ + 2x - 1", "correct": false },
+          { "text": "y = 5/x + 2", "correct": false }
+        ]
+      },
+      {
+        "question": "Was ist die allgemeine Form einer quadratischen Funktion?",
+        "answers": [
+          { "text": "y = mx + b", "correct": false },
+          { "text": "y = ax² + bx + c", "correct": true },
+          { "text": "y = ax³ + bx² + cx + d", "correct": false },
+          { "text": "y = a/x + b", "correct": false }
+        ]
+      },
+      {
+        "question": "Welchen Grad hat eine quadratische Funktion?",
+        "answers": [
+          { "text": "1", "correct": false },
+          { "text": "2", "correct": true },
+          { "text": "3", "correct": false },
+          { "text": "0", "correct": false }
+        ]
+      },
+      {
+        "question": "Wie heißt die grafische Darstellung einer quadratischen Funktion?",
+        "answers": [
+          { "text": "Gerade", "correct": false },
+          { "text": "Parabel", "correct": true },
+          { "text": "Hyperbel", "correct": false },
+          { "text": "Kreis", "correct": false }
+        ]
+      },
+      {
+        "question": "Was sind die Nullstellen einer quadratischen Funktion?",
+        "answers": [
+          { "text": "Die Punkte, an denen die Parabel die y-Achse schneidet.", "correct": false },
+          { "text": "Die Punkte, an denen die Parabel die x-Achse schneidet.", "correct": true },
+          { "text": "Der höchste Punkt der Parabel.", "correct": false },
+          { "text": "Der tiefste Punkt der Parabel.", "correct": false }
+        ]
+      },
+      {
+        "question": "Wie viele Nullstellen kann eine quadratische Funktion maximal haben?",
+        "answers": [
+          { "text": "1", "correct": false },
+          { "text": "2", "correct": true },
+          { "text": "3", "correct": false },
+          { "text": "unendlich viele", "correct": false }
+        ]
+      },
+      {
+        "question": "Welche Formel kann verwendet werden, um die Nullstellen einer quadratischen Funktion zu berechnen?",
+        "answers": [
+          { "text": "y = mx + b", "correct": false },
+          { "text": "x = (-b ± √(b² - 4ac)) / 2a", "correct": true },
+          { "text": "a² + b² = c²", "correct": false },
+          { "text": "sin(α) = Gegenkathete / Hypotenuse", "correct": false }
+        ]
+      },
+      {
+        "question": "Wie nennt man den Ausdruck unter der Wurzel in der Mitternachtsformel?",
+        "answers": [
+          { "text": "Diskriminante", "correct": true },
+          { "text": "Koeffizient", "correct": false },
+          { "text": "Variable", "correct": false },
+          { "text": "Konstante", "correct": false }
+        ]
+      },
+      {
+        "question": "Was gibt die Diskriminante an?",
+        "answers": [
+          { "text": "Die Anzahl der Lösungen der quadratischen Gleichung.", "correct": true },
+          { "text": "Die Steigung der Parabel.", "correct": false },
+          { "text": "Den y-Achsenabschnitt der Parabel.", "correct": false },
+          { "text": "Die Form der Parabel.", "correct": false }
+        ]
+      },
+      {
+        "question": "Wenn die Diskriminante negativ ist, wie viele Lösungen hat die quadratische Gleichung?",
+        "answers": [
+          { "text": "0", "correct": true },
+          { "text": "1", "correct": false },
+          { "text": "2", "correct": false },
+          { "text": "unendlich viele", "correct": false }
+        ]
+      }
+    ]
+  }

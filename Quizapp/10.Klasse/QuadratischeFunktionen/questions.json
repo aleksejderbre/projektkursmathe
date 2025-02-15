@@ -1,0 +1,91 @@
+{
+    "questions": [
+      {
+        "question": "Welche der folgenden Funktionen ist eine quadratische Funktion?",
+        "answers": [
+          { "text": "f(x) = 3x² + 2x - 5", "correct": true },
+          { "text": "f(x) = 4x + 7", "correct": false },
+          { "text": "f(x) = x³ - 2x", "correct": false },
+          { "text": "f(x) = 2/x", "correct": false }
+        ]
+      },
+      {
+        "question": "Ein Graph einer quadratischen Funktion ist immer eine Parabel.",
+        "answers": [
+          { "text": "Wahr", "correct": true },
+          { "text": "Falsch", "correct": false }
+        ]
+      },
+      {
+        "question": "Welche Aussage über den Scheitelpunkt einer Parabel ist richtig?",
+        "answers": [
+          { "text": "Er ist der höchste oder tiefste Punkt der Parabel.", "correct": true },
+          { "text": "Er liegt immer auf der x-Achse.", "correct": false },
+          { "text": "Er ist immer bei (0,0).", "correct": false },
+          { "text": "Es gibt immer zwei Scheitelpunkte.", "correct": false }
+        ]
+      },
+      {
+        "question": "Welche der folgenden Aussagen über die allgemeine Form einer quadratischen Funktion f(x) = ax² + bx + c sind korrekt?",
+        "answers": [
+          { "text": "Wenn a > 0, ist die Parabel nach oben geöffnet.", "correct": true },
+          { "text": "Wenn a < 0, ist die Parabel nach unten geöffnet.", "correct": true },
+          { "text": "Die Variable c bestimmt die Symmetrieachse der Parabel.", "correct": false },
+          { "text": "b hat keinen Einfluss auf die Lage des Scheitelpunkts.", "correct": false }
+        ]
+      },
+      {
+        "question": "Wie viele Nullstellen kann eine quadratische Funktion maximal haben?",
+        "answers": [
+          { "text": "Eine", "correct": false },
+          { "text": "Zwei", "correct": true },
+          { "text": "Drei", "correct": false },
+          { "text": "Unendlich viele", "correct": false }
+        ]
+      },
+      {
+        "question": "Die Diskriminante D = b² - 4ac einer quadratischen Funktion bestimmt die Anzahl der Nullstellen.",
+        "answers": [
+          { "text": "Wahr", "correct": true },
+          { "text": "Falsch", "correct": false }
+        ]
+      },
+      {
+        "question": "Welche Aussage über die Diskriminante ist korrekt?",
+        "answers": [
+          { "text": "Wenn D > 0, gibt es zwei verschiedene Nullstellen.", "correct": true },
+          { "text": "Wenn D = 0, gibt es eine doppelte Nullstelle.", "correct": true },
+          { "text": "Wenn D < 0, gibt es keine reellen Nullstellen.", "correct": true },
+          { "text": "D beeinflusst nicht die Anzahl der Nullstellen.", "correct": false }
+        ]
+      },
+      {
+        "question": "Welche der folgenden Methoden kann man verwenden, um die Nullstellen einer quadratischen Funktion zu berechnen?",
+        "answers": [
+          { "text": "pq-Formel", "correct": true },
+          { "text": "Mitternachtsformel", "correct": true },
+          { "text": "Faktorisierung", "correct": true },
+          { "text": "Sinussatz", "correct": false }
+        ]
+      },
+      {
+        "question": "Welche Koordinate gibt an, wo die Parabel die y-Achse schneidet?",
+        "answers": [
+          { "text": "x-Wert des Scheitelpunkts", "correct": false },
+          { "text": "b in der allgemeinen Form", "correct": false },
+          { "text": "c in der allgemeinen Form", "correct": true },
+          { "text": "Die erste Nullstelle", "correct": false }
+        ]
+      },
+      {
+        "question": "Gegeben ist die quadratische Funktion f(x) = x² - 6x + 9. Wie lautet der Scheitelpunkt?",
+        "answers": [
+          { "text": "(3,0)", "correct": true },
+          { "text": "(-3,0)", "correct": false },
+          { "text": "(0,9)", "correct": false },
+          { "text": "(6,9)", "correct": false }
+        ]
+      }
+    ]
+  }
+  

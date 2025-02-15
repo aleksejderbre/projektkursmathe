@@ -20,9 +20,10 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.5);
     z-index: 0;
 }
+
 
 /* Container für Inhalte */
 .container {
@@ -34,21 +35,71 @@ body::before {
 
 /* Überschriften */
 h1 {
-    color: #ffcc00; /* Warmes Goldgelb */
+    color: #908effd0; 
     font-size: 2.5em;
     margin-bottom: 15px;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.753);
 }
 
 h2 {
-    color: #ffffffb5;
+    color: #ffffff;
     font-size: 1.5em;
-    background-color: rgba(24, 80, 137, 0.498);
+    background-color: rgba(0, 99, 197, 0.623);
     padding: 10px;
     border-radius: 8px;
     display: inline-block;
-    margin: 10px 0;
+    margin: 20px 0;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 10px rgba(117, 185, 253, 0.7);
+}
+
+.text {
+    font-size: 1.2em;
+    color: #f5f5f5; 
+    line-height: 1.6; 
+    text-align: justify; 
+    padding: 10px; 
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.192); 
+}
+
+/* Stil für mathematische Formeln und Code */
+code {
+    font-family: "Consolas", monospace;
+    font-weight: bold;
+    font-size: 1em;
+    background-color: rgba(0, 0, 0, 0.534);
+    color: #fddd73a2;
+    padding: 2.5px 5px;
+    border-radius: 10px;
+    display: inline-block;
+    margin: 5px 0;
+    word-wrap: break-word;
+}
+
+/* Listen-Styling */
+ul, ol {
+    text-align: center;
+    padding-left: 20px;
+    margin: 10px 0;
+}
+
+li {
+    font-size: 1.1em;
+    color: #cce0ff;
+    margin: 5px 0;
+    line-height: 1.5;
+}
+
+li {
+    list-style: none;
+}
+
+
+/* Fettgedruckter Text */
+b {
+    font-weight: bold;
+    color: #73ff9d7c;
 }
 
 /* Vertikale Links als Kästchen */
@@ -61,12 +112,14 @@ h2 {
     border-radius: 8px;
     font-size: 1.1em;
     margin: 10px 0;
-    transition: background-color 0.3s ease, transform 0.2s ease;;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .links a:hover {
     background-color: #0056b3;
+    color: rgb(255, 255, 255);
     transform: scale(1.05);
+    box-shadow: 0px 4px 12px rgb(0, 0, 0);
 }
 
 /* Quiz-Buttons */
@@ -81,20 +134,21 @@ h2 {
     font-size: 1.2em;
     margin: 10px auto;
     transition: background-color 0.3s ease, transform 0.2s ease;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 4px 12px rgb(0, 63, 71);
     cursor: pointer;
     border: none;
     text-align: center;
-    width: fit-content
+    width: fit-content;
 }
 
 .answer-btn:hover {
     background-color: #0056b3;
     transform: scale(1.05);
+    box-shadow: 0px 6px 15px #0057b3bd;
 }
 
 #next-btn {
-    margin-top: 20px;
+    margin-top: 10px;
     padding: 12px 24px;
     font-size: 1.2em;
     cursor: pointer;
@@ -103,11 +157,13 @@ h2 {
     border: none;
     border-radius: 5px;
     transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0px 4px 12px rgb(0, 36, 8);
 }
 
 #next-btn:hover {
     background-color: #218838;
     transform: scale(1.05);
+    box-shadow: 0px 6px 15px rgba(22, 94, 39, 0.9);
 }
 
 /* Zurück-Button */
@@ -119,6 +175,7 @@ h2 {
     font-size: 1.2em;
     background-color: rgba(0, 52, 107, 0.5);
     border-radius: 30px;
+    box-shadow: 0px 2px 10px rgba(0, 52, 107, 0.5);
 }
 
 .back-arrow a {
@@ -130,8 +187,8 @@ h2 {
 }
 
 .back-arrow a:hover {
-    color: hsl(219, 100%, 90%);
-    text-decoration: underline;
+    color: hsla(219, 100%, 81%, 0.815);
+    text-decoration: none;
 }
 
 /* Bilder */
@@ -143,8 +200,51 @@ h2 {
     margin: 10px auto;
     display: block;
     border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
+
+#score-container {
+    font-size: 1.2em;
+    font-weight: bolder;
+    background-color: rgba(0, 0, 0, 0.205);
+    color: #ffffff;
+    padding: 1px 12px; 
+    border-radius: 11px;
+    margin-inline: auto; 
+    margin-top: 30px;
+    text-align: center;
+    min-width: 80px;
+    max-width: 150px;
+    box-shadow: 2px 2px 10px rgba(0, 99, 0, 0.568);
+}
+
+.correct-answer {
+    font-size: 1.5em;
+    background-color: rgba(7, 77, 7, 0.6);
+    color: #ffffff;
+    padding: 7px 10px;
+    border-radius: 10px;
+    max-width: 150px;
+    display: inline-block;
+    margin: 5px auto;
+    word-wrap: break-word;
+}
+
+.wrong-answer {
+    font-size: 1.5em;
+    background-color: rgba(128, 0, 0, 0.6);
+    color: #ffffff;
+    padding: 7px 11px;
+    border-radius: 10px;
+    display: inline-block;
+    margin: 5px auto;
+    word-wrap: break-word;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
 
 /* Responsives Design */
 @media (min-width: 768px) {

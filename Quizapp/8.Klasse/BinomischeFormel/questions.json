@@ -1,0 +1,71 @@
+{
+    "questions": [
+      {
+        "question": "Die erste binomische Formel lautet: (a + b)² = a² + 2ab + b².",
+        "answers": [
+          { "text": "Wahr", "correct": true },
+          { "text": "Falsch", "correct": false }
+        ]
+      },
+      {
+        "question": "Welche der folgenden Ausdrücke entspricht der zweiten binomischen Formel?",
+        "answers": [
+          { "text": "(a - b)² = a² - 2ab + b²", "correct": true },
+          { "text": "(a - b)² = a² + 2ab - b²", "correct": false },
+          { "text": "(a + b)² = a² - 2ab + b²", "correct": false },
+          { "text": "(a + b)² = a² + 2ab - b²", "correct": false }
+        ]
+      },
+      {
+        "question": "Welche der folgenden Ausdrücke sind Beispiele für die dritte binomische Formel?",
+        "answers": [
+          { "text": "(a + b)(a - b) = a² - b²", "correct": true },
+          { "text": "(x - y)(x + y) = x² - y²", "correct": true },
+          { "text": "(m + n)(m - n) = m² + n²", "correct": false },
+          { "text": "(p - q)(p + q) = p² - 2pq + q²", "correct": false }
+        ]
+      },
+      {
+        "question": "Die dritte binomische Formel wird auch als Differenz von Quadraten bezeichnet.",
+        "answers": [
+          { "text": "Wahr", "correct": true },
+          { "text": "Falsch", "correct": false }
+        ]
+      },
+      {
+        "question": "Welche der folgenden Aussagen über binomische Formeln sind korrekt?",
+        "answers": [
+          { "text": "Sie helfen beim schnellen Ausmultiplizieren von Klammern", "correct": true },
+          { "text": "Sie gelten nur für positive Zahlen", "correct": false },
+          { "text": "Sie werden oft in Algebra und Geometrie verwendet", "correct": true },
+          { "text": "Sie können nicht rückwärts angewendet werden", "correct": false }
+        ]
+      },
+      {
+        "question": "Welche der folgenden Umformungen ist korrekt?",
+        "answers": [
+          { "text": "(5 + 3)² = 5² + 2(5)(3) + 3²", "correct": true },
+          { "text": "(x - 2)² = x² - 2x - 2²", "correct": false },
+          { "text": "(a + b)(a - b) = a² - b²", "correct": true },
+          { "text": "(y - z)² = y² - 2yz + z²", "correct": true }
+        ]
+      },
+      {
+        "question": "Die binomischen Formeln lassen sich nur auf Terme mit zwei Variablen anwenden.",
+        "answers": [
+          { "text": "Wahr", "correct": false },
+          { "text": "Falsch", "correct": true }
+        ]
+      },
+      {
+        "question": "Welche der folgenden Identitäten entspricht der ersten binomischen Formel?",
+        "answers": [
+          { "text": "(a + b)² = a² + 2ab + b²", "correct": true },
+          { "text": "(a - b)² = a² - 2ab + b²", "correct": false },
+          { "text": "(a + b)² = a² - 2ab + b²", "correct": false },
+          { "text": "(a - b)² = a² + 2ab - b²", "correct": false }
+        ]
+      }
+    ]
+  }
+  
