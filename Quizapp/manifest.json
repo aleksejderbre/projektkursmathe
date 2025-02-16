@@ -1,0 +1,16 @@
+{
+    "name": "Projektkursmathe",
+    "description": "Mathe Projektkurs Quizapp von Barkan Almin und Aleksej",
+    "short_name": "die 1+",
+    "start_url": "/startseite.html",
+    "lang": "de-DE",
+    "theme_color": "#908effd0",
+    "display": "standalone",
+    "icons": [
+      {
+        "src": "Bilder/quizapp.webp",
+        "sizes": "192x192",
+        "type": "webp"
+      }
+    ]
+  }
