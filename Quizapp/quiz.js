@@ -95,6 +95,7 @@ function selectAnswer(answer, correctAnswerText) {
 function nextQuestion() {
     const questionContainer = document.getElementById("question-container");
     const feedbackElement = document.getElementById("feedback");
+    const nextBtn = document.getElementById("next-btn");
 
     currentQuestionIndex++;
 
@@ -103,18 +104,20 @@ function nextQuestion() {
     } else {
         questionContainer.innerHTML = "";
         feedbackElement.innerText = "Glückwunsch, du hast das Quiz beendet!";
-        feedbackElement.style.color = "blue";
+        feedbackElement.style.color = "White";
+        nextBtn.style.display = "none";
+        
 
         const imageElement = document.createElement("img");
         if (score === questions.length) {
             imageElement.src = "../../Bilder/Perfekt.jpg";
-            feedbackElement.innerText = "VOLLE PUNKTZAHL";
+            feedbackElement.innerText = "VOLLE PUNKTZAHL!";
         } else if (score > questions.length * 0.7) {
             imageElement.src = "../../Bilder/highscore.jpg";
         } else if (score > questions.length * 0.3) {
             imageElement.src = "../../Bilder/lowscore.jpg";
         } else {
-            imageElement.src = "../../Bilder/TryAgain.jpg";
+            imageElement.src = "../../Bilder/TryAgain.webp";
         }
 
         imageElement.alt = "Quiz beendet";
