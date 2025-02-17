@@ -5,60 +5,179 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    background-image: url("./Bilder/hintergrund.jpg"); /* Hintergrundbild einfügen */
-    background-size: cover; /* Deckt den gesamten Bereich ab */
-    background-position: center; /* Zentriert das Bild */
+    min-height: 100vh;
+    background-image: url("./Bilder/hintergrund.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
 }
 
-/* Container zentrieren und skalieren */
-.container {
+/* Leicht dunkles Overlay für bessere Lesbarkeit */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    max-width: 390px; /* Maximale Breite für iPhone 12 */
-    padding: 5% 10%; /* Padding für kleinere Displays */
-    text-align: center;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 0;
 }
 
-/* Header Styling */
+
+/* Container für Inhalte */
+.container {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Überschriften */
 h1 {
-    color: #333;
-    font-size: 2em;
-    margin-bottom: 10px;
+    color: #908effd0; 
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.753);
 }
 
 h2 {
-    color: #555;
+    color: #ffffff;
+    font-size: 1.5em;
+    background-color: rgba(0, 99, 197, 0.623);
+    padding: 10px;
+    border-radius: 8px;
+    display: inline-block;
+    margin: 20px 0;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 10px rgba(117, 185, 253, 0.7);
+}
+
+.text {
     font-size: 1.2em;
-    margin-bottom: 20px;
+    color: #f5f5f5; 
+    line-height: 1.6; 
+    text-align: justify; 
+    padding: 10px; 
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.192); 
+}
+
+/* Stil für mathematische Formeln und Code */
+code {
+    font-family: "Consolas", monospace;
+    font-weight: bold;
+    font-size: 1em;
+    background-color: rgba(0, 0, 0, 0.534);
+    color: #fddd73a2;
+    padding: 2.5px 5px;
+    border-radius: 10px;
+    display: inline-block;
+    margin: 5px 0;
+    word-wrap: break-word;
+}
+
+/* Listen-Styling */
+ul, ol {
+    text-align: center;
+    padding-left: 20px;
+    margin: 10px 0;
+}
+
+li {
+    font-size: 1.1em;
+    color: #cce0ff;
+    margin: 5px 0;
+    line-height: 1.5;
+}
+
+li {
+    list-style: none;
+}
+
+
+/* Fettgedruckter Text */
+b {
+    font-weight: bold;
+    color: #73ff9d7c;
 }
 
 /* Vertikale Links als Kästchen */
 .links a {
     display: block;
-    background-color: #007bff;
-    color: white;
+    background-color: #00448db7;
+    color: rgb(196, 196, 196);
     text-decoration: none;
     padding: 15px;
     border-radius: 8px;
     font-size: 1.1em;
     margin: 10px 0;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .links a:hover {
     background-color: #0056b3;
+    color: rgb(255, 255, 255);
+    transform: scale(1.05);
+    box-shadow: 0px 4px 12px rgb(0, 0, 0);
 }
 
-/* Back-Arrow Container Styling */
-.back-arrow {
-    position: absolute;
-    top: 20px;
-    left: 20px;
+.answer-btn {
+    width: 400px;
+    display: block;
+    background-color: #0073e6;
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 8px;
     font-size: 1.2em;
+    margin: 10px auto;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0px 4px 12px rgb(0, 63, 71);
+    cursor: pointer;
+    border: none;
+    text-align: center;
+}
+
+.answer-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+    box-shadow: 0px 6px 15px #0057b3bd;
+}
+
+#next-btn {
+    margin-top: 10px;
+    padding: 12px 24px;
+    font-size: 1.2em;
+    cursor: pointer;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0px 4px 12px rgb(0, 36, 8);
+}
+
+#next-btn:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+    box-shadow: 0px 6px 15px rgba(22, 94, 39, 0.9);
+}
+
+/* Zurück-Button */
+.back-arrow {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    padding: 1%;
+    font-size: 1.2em;
+    background-color: rgba(0, 52, 107, 0.5);
+    border-radius: 30px;
+    box-shadow: 0px 2px 10px rgba(0, 52, 107, 0.5);
 }
 
 .back-arrow a {
-    color: #007bff;
+    color: white;
     text-decoration: none;
     font-weight: bold;
     display: flex;
@@ -66,87 +185,88 @@ h2 {
 }
 
 .back-arrow a:hover {
-    color: #0056b3;
-    text-decoration: underline;
-}
-
-/* Quiz Container Styling */
-.quiz-container {
-    max-width: 600px;
-    margin: 80px auto;
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
-}
-
-.quiz-container h1 {
-    font-size: 1.8em;
-    margin-bottom: 20px;
-}
-
-#question-container {
-    margin-bottom: 20px;
-}
-
-.answer-btn {
-    display: block;
-    margin: 10px auto;
-    padding: 10px 20px;
-    font-size: 1em;
-    cursor: pointer;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    transition: background-color 0.3s;
+    color: hsla(219, 100%, 81%, 0.815);
     text-decoration: none;
 }
 
-.answer-btn:hover {
-    background-color: #0056b3;
-}
-
-#next-btn {
-    margin-top: 20px;
-    padding: 10px 20px;
-    font-size: 1em;
-    cursor: pointer;
-    background-color: #28a745;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-}
-
+/* Bilder */
 .image-small {
     width: 100%;
     max-width: 300px;
     height: auto;
-    object-fit: cover; /* Stellt sicher, dass das Bild nicht verzerrt wird */
-    margin: 10px auto; /* Zentriert das Bild */
+    object-fit: cover;
+    margin: 10px auto;
     display: block;
+    border-radius: 8px;
 }
 
-/* Responsives Design für größere Bildschirme */
+#score-container {
+    font-size: 1.2em;
+    font-weight: bolder;
+    background-color: rgba(0, 0, 0, 0.205);
+    color: #ffffff;
+    padding: 1px 12px; 
+    border-radius: 11px;
+    margin-inline: auto; 
+    margin-top: 30px;
+    text-align: center;
+    min-width: 80px;
+    max-width: 150px;
+    box-shadow: 2px 2px 10px rgba(0, 99, 0, 0.568);
+}
+
+.correct-answer {
+    font-size: 1.5em;
+    background-color: rgba(7, 77, 7, 0.6);
+    color: #ffffff;
+    padding: 7px 10px;
+    border-radius: 10px;
+    max-width: 150px;
+    display: inline-block;
+    margin: 5px auto;
+    word-wrap: break-word;
+}
+
+.wrong-answer {
+    font-size: 1.5em;
+    background-color: rgba(128, 0, 0, 0.6);
+    color: #ffffff;
+    padding: 7px 11px;
+    border-radius: 10px;
+    display: inline-block;
+    margin: 5px auto;
+    word-wrap: break-word;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+
+/* Responsives Design */
 @media (min-width: 768px) {
     .container {
-        padding: 5% 15%;
+        max-width: 500px;
+        padding: 6vh 8vw;
     }
 
     h1 {
-        font-size: 2.5em; /* Größere Schrift auf größeren Bildschirmen */
+        font-size: 2.5em;
     }
 
     h2 {
-        font-size: 1.5em; /* Größere Überschrift auf größeren Bildschirmen */
+        font-size: 1.5em;
     }
 }
 
 @media (min-width: 1024px) {
     .container {
-        max-width: 600px; /* Container wird breiter auf Tablets und Desktops */
+        max-width: 600px;
     }
 
     h1 {
-        font-size: 3em; /* Noch größere Schrift auf großen Bildschirmen */
+        font-size: 3em;
     }
 
     h2 {
@@ -154,6 +274,6 @@ h2 {
     }
 
     .answer-btn {
-        padding: 15px 30px; /* Größere Buttons für Tablets und Desktops */
+        padding: 15px 30px;
     }
 }

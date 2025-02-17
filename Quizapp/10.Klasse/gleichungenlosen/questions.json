@@ -1,0 +1,103 @@
+{
+    "questions": [
+      {
+        "question": "Löse die Gleichung: 4x - 7 = 9. Was ist der erste Schritt?",
+        "answers": [
+          { "text": "4x = 9 + 7", "correct": true },
+          { "text": "4x = 9 - 7", "correct": false },
+          { "text": "4x = 7 - 9", "correct": false },
+          { "text": "x = 9 + 7", "correct": false }
+        ]
+      },
+      {
+        "question": "Gleichung: 4x = 9 + 7. Was ergibt die Umformung?",
+        "answers": [
+          { "text": "4x = 16", "correct": true },
+          { "text": "4x = 12", "correct": false },
+          { "text": "4x = 18", "correct": false },
+          { "text": "4x = 14", "correct": false }
+        ]
+      },
+      {
+        "question": "Gleichung: 4x = 16. Was ist der nächste Schritt?",
+        "answers": [
+          { "text": "x = 16 : 4", "correct": true },
+          { "text": "x = 16 + 4", "correct": false },
+          { "text": "x = 16 - 4", "correct": false },
+          { "text": "x = 16 * 4", "correct": false }
+        ]
+      },
+      {
+        "question": "Gleichung: x = 16 : 4. Was ist die Lösung für x?",
+        "answers": [
+          { "text": "x = 4", "correct": true },
+          { "text": "x = 6", "correct": false },
+          { "text": "x = 8", "correct": false },
+          { "text": "x = 2", "correct": false }
+        ]
+      },
+      {
+        "question": "Löse die quadratische Gleichung: x² - 5x + 6 = 0. Was ist der erste Schritt?",
+        "answers": [
+          { "text": "Faktorisieren: (x - 2)(x - 3) = 0", "correct": true },
+          { "text": "pq-Formel anwenden", "correct": false },
+          { "text": "Diskriminante berechnen", "correct": false },
+          { "text": "Alles mit 2 multiplizieren", "correct": false }
+        ]
+      },
+      {
+        "question": "Gleichung: (x - 2)(x - 3) = 0. Was folgt daraus?",
+        "answers": [
+          { "text": "x₁ = 2, x₂ = 3", "correct": true },
+          { "text": "x₁ = -2, x₂ = -3", "correct": false },
+          { "text": "x₁ = 3, x₂ = -2", "correct": false },
+          { "text": "x₁ = 1, x₂ = 5", "correct": false }
+        ]
+      },
+      {
+        "question": "Löse die quadratische Gleichung mit der pq-Formel: x² - 4x + 3 = 0. Was ist der erste Schritt?",
+        "answers": [
+          { "text": "p und q bestimmen", "correct": true },
+          { "text": "Gleichung umstellen", "correct": false },
+          { "text": "Mitternachtsformel anwenden", "correct": false },
+          { "text": "Beide Seiten quadrieren", "correct": false }
+        ]
+      },
+      {
+        "question": "Gleichung: x² - 4x + 3 = 0. Was sind p und q?",
+        "answers": [
+          { "text": "p = -4, q = 3", "correct": true },
+          { "text": "p = 4, q = -3", "correct": false },
+          { "text": "p = -3, q = 4", "correct": false },
+          { "text": "p = -4, q = -3", "correct": false }
+        ]
+      },
+      {
+        "question": "Gleichung: x² - 4x + 3 = 0. Wie lautet die pq-Formel?",
+        "answers": [
+          { "text": "x₁,₂ = -p/2 ± √((p/2)² - q)", "correct": true },
+          { "text": "x₁,₂ = -p ± √(p² - q)", "correct": false },
+          { "text": "x₁,₂ = -p/2 ± √(q - (p/2)²) ", "correct": false },
+          { "text": "x₁,₂ = -q ± √(p² - q)", "correct": false }
+        ]
+      },
+      {
+        "question": "Berechne mit der pq-Formel: x² - 4x + 3 = 0. Was ist der nächste Schritt?",
+        "answers": [
+          { "text": "x₁,₂ = 2 ± √1", "correct": true },
+          { "text": "x₁,₂ = 4 ± √9", "correct": false },
+          { "text": "x₁,₂ = 1 ± √2", "correct": false },
+          { "text": "x₁,₂ = 2 ± √2", "correct": false }
+        ]
+      },
+      {
+        "question": "Gleichung: x₁,₂ = 2 ± √1. Was sind die Lösungen?",
+        "answers": [
+          { "text": "x₁ = 3, x₂ = 1", "correct": true },
+          { "text": "x₁ = -3, x₂ = -1", "correct": false },
+          { "text": "x₁ = 4, x₂ = 0", "correct": false },
+          { "text": "x₁ = 5, x₂ = -1", "correct": false }
+        ]
+      }
+    ]
+  }

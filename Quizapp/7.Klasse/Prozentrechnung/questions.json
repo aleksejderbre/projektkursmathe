@@ -1,0 +1,94 @@
+{
+    "questions": [
+      {
+        "question": "Ein Fahrrad kostet 200 € (Grundwert). Es wird um 15 % (Prozentsatz) reduziert. Wie viel beträgt der Rabatt (Prozentwert)?",
+        "answers": [
+          { "text": "15 €", "correct": false },
+          { "text": "30 €", "correct": true },
+          { "text": "20 €", "correct": false },
+          { "text": "10 €", "correct": false }
+        ]
+      },
+      {
+        "question": "Ein Pullover kostet 50 € und wird um 20 % reduziert. Was ist der neue Preis?",
+        "answers": [
+          { "text": "40 €", "correct": true },
+          { "text": "10 €", "correct": false },
+          { "text": "60 €", "correct": false },
+          { "text": "50 €", "correct": false }
+        ]
+      },
+      {
+        "question": "In einer Schule gibt es 400 Schüler. 25 % davon spielen ein Instrument. Wie viele Schüler spielen ein Instrument?",
+        "answers": [
+          { "text": "100", "correct": true },
+          { "text": "25", "correct": false },
+          { "text": "40", "correct": false },
+          { "text": "160", "correct": false }
+        ]
+      },
+      {
+        "question": "Ein Handy kostet 300 €. Der Preis wird um 10 % erhöht. Wie hoch ist der neue Preis?",
+        "answers": [
+          { "text": "330 €", "correct": true },
+          { "text": "30 €", "correct": false },
+          { "text": "270 €", "correct": false },
+          { "text": "310 €", "correct": false }
+        ]
+      },
+      {
+        "question": "50 % einer Menge von 80 Keksen sind Schokokekse. Wie viele Kekse sind keine Schokokekse?",
+        "answers": [
+          { "text": "40", "correct": true },
+          { "text": "50", "correct": false },
+          { "text": "20", "correct": false },
+          { "text": "30", "correct": false }
+        ]
+      },
+      {
+        "question": "Ein Buch kostet 15 €. Es wird um 20 % reduziert. Was ist der neue Preis?",
+        "answers": [
+          { "text": "12 €", "correct": true },
+          { "text": "3 €", "correct": false },
+          { "text": "18 €", "correct": false },
+          { "text": "15 €", "correct": false }
+        ]
+      },
+      {
+        "question": "In einer Tüte sind 120 Gummibärchen. 75 % davon sind rot. Wie viele Gummibärchen sind rot?",
+        "answers": [
+          { "text": "90", "correct": true },
+          { "text": "30", "correct": false },
+          { "text": "75", "correct": false },
+          { "text": "45", "correct": false }
+        ]
+      },
+      {
+        "question": "Ein Fernseher kostet 500 €. Der Preis wird um 5 % gesenkt. Wie viel kostet er jetzt?",
+        "answers": [
+          { "text": "475 €", "correct": true },
+          { "text": "25 €", "correct": false },
+          { "text": "525 €", "correct": false },
+          { "text": "450 €", "correct": false }
+        ]
+      },
+      {
+        "question": "30 % einer Lieferung von 200 Äpfeln sind beschädigt. Wie viele Äpfel sind in Ordnung?",
+        "answers": [
+          { "text": "140", "correct": true },
+          { "text": "60", "correct": false },
+          { "text": "30", "correct": false },
+          { "text": "170", "correct": false }
+        ]
+      },
+      {
+        "question": "Ein Spiel kostet 40 €. Es wird um 25 % reduziert. Was ist der neue Preis?",
+        "answers": [
+          { "text": "30 €", "correct": true },
+          { "text": "10 €", "correct": false },
+          { "text": "50 €", "correct": false },
+          { "text": "35 €", "correct": false }
+        ]
+      }
+    ]
+  }

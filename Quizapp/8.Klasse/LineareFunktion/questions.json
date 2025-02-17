@@ -1,0 +1,87 @@
+{
+    "questions": [
+      {
+        "question": "Eine lineare Funktion hat die allgemeine Form y = mx + b.",
+        "answers": [
+          { "text": "Wahr", "correct": true },
+          { "text": "Falsch", "correct": false }
+        ]
+      },
+      {
+        "question": "Welche Bedeutung hat die Variable 'm' in der linearen Funktion y = mx + b?",
+        "answers": [
+          { "text": "Steigung", "correct": true },
+          { "text": "y-Achsenabschnitt", "correct": false },
+          { "text": "Schnittpunkt mit der x-Achse", "correct": false },
+          { "text": "Exponent der Funktion", "correct": false }
+        ]
+      },
+      {
+        "question": "Welche der folgenden Funktionen sind linear?",
+        "answers": [
+          { "text": "y = 3x + 2", "correct": true },
+          { "text": "y = x² + 2x", "correct": false },
+          { "text": "y = -4x", "correct": true },
+          { "text": "y = 5/x", "correct": false }
+        ]
+      },
+      {
+        "question": "Die Steigung einer linearen Funktion kann negativ sein.",
+        "answers": [
+          { "text": "Wahr", "correct": true },
+          { "text": "Falsch", "correct": false }
+        ]
+      },
+      {
+        "question": "Welche der folgenden Aussagen treffen auf die Steigung einer linearen Funktion zu?",
+        "answers": [
+          { "text": "Eine größere Steigung bedeutet eine steilere Gerade", "correct": true },
+          { "text": "Eine Steigung von 0 bedeutet eine waagerechte Gerade", "correct": true },
+          { "text": "Eine negative Steigung führt zu einer fallenden Gerade", "correct": true },
+          { "text": "Die Steigung kann nicht negativ sein", "correct": false }
+        ]
+      },
+      {
+        "question": "Welche Bedeutung hat die Variable 'b' in der linearen Funktion y = mx + b?",
+        "answers": [
+          { "text": "Schnittpunkt mit der y-Achse", "correct": true },
+          { "text": "Steigung der Funktion", "correct": false },
+          { "text": "Schnittpunkt mit der x-Achse", "correct": false },
+          { "text": "Der höchste Wert der Funktion", "correct": false }
+        ]
+      },
+      {
+        "question": "Eine lineare Funktion kann eine vertikale Gerade sein.",
+        "answers": [
+          { "text": "Wahr", "correct": false },
+          { "text": "Falsch", "correct": true }
+        ]
+      },
+      {
+        "question": "Welche der folgenden Gleichungen entsprechen einer linearen Funktion?",
+        "answers": [
+          { "text": "y = 2x - 5", "correct": true },
+          { "text": "y = 7", "correct": true },
+          { "text": "y = x³ - x", "correct": false },
+          { "text": "y = 1/x", "correct": false }
+        ]
+      },
+      {
+        "question": "Eine lineare Funktion kann mehr als eine Steigung haben.",
+        "answers": [
+          { "text": "Wahr", "correct": false },
+          { "text": "Falsch", "correct": true }
+        ]
+      },
+      {
+        "question": "Welche der folgenden Eigenschaften hat eine lineare Funktion immer?",
+        "answers": [
+          { "text": "Sie hat genau eine Steigung", "correct": true },
+          { "text": "Ihr Graph ist eine Gerade", "correct": true },
+          { "text": "Sie hat immer eine positive Steigung", "correct": false },
+          { "text": "Sie verläuft immer durch den Ursprung", "correct": false }
+        ]
+      }
+    ]
+  }
+  

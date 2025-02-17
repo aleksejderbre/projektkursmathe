@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>9. Klasse - Quadratische Funktionen</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="main-title">Mathe: Quadratische Funktionen</h1>
+
+        <div class="back-arrow">
+            <a href="..\10.klasse.html">&#8592; Zurück</a>
+        </div>
+
+        <div style="margin-top: 10%;" class="content">
+            <h2 class="section-title">Was sind quadratische Funktionen?</h2>
+            <p class="text">
+                Quadratische Funktionen sind Funktionen, deren höchste Potenz von \( x \) eine 2 ist.  
+                Sie haben die allgemeine Form:
+            </p>
+            <p class="formula">
+                \( f(x) = ax^2 + bx + c \), wobei \( a \neq 0 \)
+            </p>
+            <p class="text">
+                Ihre Graphen sind Parabeln, die je nach Vorzeichen von \( a \) nach oben oder unten geöffnet sind:
+            </p>
+            <ul class="list">
+                <li>Wenn \( a > 0 \), ist die Parabel nach oben geöffnet.</li>
+                <li>Wenn \( a < 0 \), ist die Parabel nach unten geöffnet.</li>
+            </ul>
+
+            <h2 class="section-title">Eigenschaften einer Parabel</h2>
+            <ul class="list">
+                <li><b>Nullstellen:</b> Schnittpunkte mit der x-Achse.</li>
+                <li><b>y-Achsenabschnitt:</b> Der Wert von \( f(0) \), also \( c \).</li>
+                <li><b>Symmetrieachse:</b> Die Gerade \( x = -\frac{b}{2a} \), die die Parabel in zwei gleiche Hälften teilt.</li>
+                <li><b>Scheitelpunkt:</b> Der tiefste oder höchste Punkt der Parabel.</li>
+            </ul>
+
+            <h2 class="section-title">Nullstellen berechnen</h2>
+            <p class="text">
+                Die Nullstellen einer quadratischen Funktion sind die x-Werte, für die \( f(x) = 0 \) gilt.  
+                Es gibt drei Methoden, um sie zu berechnen:
+            </p>
+
+            <h3 class="section-title">1. Faktorisieren (wenn möglich)</h3>
+            <p class="text">
+                Beispiel: \( x^2 - 5x + 6 = 0 \)  
+                Dies kann als \( (x - 2)(x - 3) = 0 \) geschrieben werden.  
+                Daraus folgt: \( x_1 = 2 \), \( x_2 = 3 \).
+            </p>
+
+            <h3 class="section-title">2. pq-Formel (für \( x^2 + px + q = 0 \))</h3>
+            <p class="text">
+                Die pq-Formel lautet:
+            </p>
+            <p class="formula">
+                \( x_{1,2} = -\frac{p}{2} \pm \sqrt{\left(\frac{p}{2}\right)^2 - q} \)
+            </p>
+            <p class="text">
+                Beispiel: \( x^2 - 4x + 3 = 0 \)
+            </p>
+            <p class="text">
+                \( x_{1,2} = \frac{4}{2} \pm \sqrt{\left(\frac{4}{2}\right)^2 - 3} \)  
+                \( x_{1,2} = 2 \pm \sqrt{1} \)  
+                \( x_1 = 3, x_2 = 1 \)
+            </p>
+
+            <h3 class="section-title">3. Mitternachtsformel (quadratische Lösungsformel)</h3>
+            <p class="text">
+                Falls die pq-Formel nicht direkt anwendbar ist, nutzt man die allgemeine Lösungsformel:
+            </p>
+            <p class="formula">
+                \( x_{1,2} = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a} \)
+            </p>
+            <p class="text">
+                Beispiel: \( 2x^2 - 4x - 6 = 0 \)
+            </p>
+            <p class="text">
+                \( x_{1,2} = \frac{4 \pm \sqrt{(-4)^2 - 4(2)(-6)}}{2(2)} \)  
+                \( x_{1,2} = \frac{4 \pm \sqrt{16 + 48}}{4} \)  
+                \( x_{1,2} = \frac{4 \pm \sqrt{64}}{4} \)  
+                \( x_{1,2} = \frac{4 \pm 8}{4} \)  
+                \( x_1 = 3, x_2 = -1 \)
+            </p>
+
+            <h2 class="section-title">Der Scheitelpunkt</h2>
+            <p class="text">
+                Der Scheitelpunkt ist der tiefste oder höchste Punkt der Parabel.  
+                Seine Koordinaten lassen sich mit folgender Formel berechnen:
+            </p>
+            <p class="formula">
+                \( S\left( -\frac{b}{2a}, f\left(-\frac{b}{2a}\right) \right) \)
+            </p>
+            <p class="text">
+                Beispiel: \( f(x) = 2x^2 - 4x + 1 \)
+            </p>
+            <p class="text">
+                \( x_S = -\frac{-4}{2 \cdot 2} = 1 \)  
+                \( y_S = f(1) = 2(1)^2 - 4(1) + 1 = -1 \)  
+                Scheitelpunkt: \( S(1, -1) \)
+            </p>
+
+            <h2 class="section-title">Wichtige Begriffe</h2>
+            <ul class="list">
+                <li><b>Parabel:</b> Der Graph einer quadratischen Funktion.</li>
+                <li><b>Nullstellen:</b> Die x-Werte, bei denen \( f(x) = 0 \).</li>
+                <li><b>Diskriminante:</b> Der Ausdruck unter der Wurzel in der Mitternachtsformel, \( D = b^2 - 4ac \), bestimmt die Anzahl der Lösungen:
+                    <ul>
+                        <li>\( D > 0 \): Zwei Nullstellen.</li>
+                        <li>\( D = 0 \): Eine doppelte Nullstelle.</li>
+                        <li>\( D < 0 \): Keine reellen Nullstellen.</li>
+                    </ul>
+                </li>
+                <li><b>Symmetrieachse:</b> Die vertikale Linie durch den Scheitelpunkt.</li>
+            </ul>
+
+            <div class="quiz-link">
+                <a href="quiz.html" class="answer-btn">Teste dein Wissen zu quadratischen Funktionen &rarr;</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

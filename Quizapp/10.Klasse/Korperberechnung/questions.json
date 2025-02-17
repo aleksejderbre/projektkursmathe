@@ -1,0 +1,80 @@
+{
+    "questions": [
+      {
+        "question": "Der Volumen eines Zylinders ist gleich der Fläche der Basis multipliziert mit der Höhe.",
+        "answers": [
+          { "text": "Wahr", "correct": true },
+          { "text": "Falsch", "correct": false }
+        ]
+      },
+      {
+        "question": "Wie berechnet man das Volumen eines Zylinders?",
+        "answers": [
+          { "text": "V = r²h", "correct": false },
+          { "text": "V = πr²h", "correct": true },
+          { "text": "V = 2πr²h", "correct": false },
+          { "text": "V = πr² + h", "correct": false }
+        ]
+      },
+      {
+        "question": "Ein Würfel hat immer eine quadratische Basis.",
+        "answers": [
+          { "text": "Wahr", "correct": true },
+          { "text": "Falsch", "correct": false }
+        ]
+      },
+      {
+        "question": "Welche der folgenden Formen beschreibt einen Würfel?",
+        "answers": [
+          { "text": "Alle Seiten sind gleich lang.", "correct": true },
+          { "text": "Alle Seiten sind rechteckig.", "correct": false },
+          { "text": "Es hat acht Ecken.", "correct": false },
+          { "text": "Es hat nur eine Fläche.", "correct": false }
+        ]
+      },
+      {
+        "question": "Die Oberfläche eines Zylinders wird mit welcher Formel berechnet?",
+        "answers": [
+          { "text": "A = 2πr² + 2πrh", "correct": true },
+          { "text": "A = πr²h", "correct": false },
+          { "text": "A = 2πr + h", "correct": false },
+          { "text": "A = πr²", "correct": false }
+        ]
+      },
+      {
+        "question": "Die Oberfläche einer Pyramide setzt sich nur aus der Fläche der Basis zusammen.",
+        "answers": [
+          { "text": "Wahr", "correct": false },
+          { "text": "Falsch", "correct": true }
+        ]
+      },
+      {
+        "question": "Wie berechnet man die Oberfläche einer Pyramide?",
+        "answers": [
+          { "text": "Oberfläche = A_Basis + 4 * A_Seite", "correct": true },
+          { "text": "Oberfläche = A_Basis + 2 * A_Seite", "correct": false },
+          { "text": "Oberfläche = A_Basis * A_Seite", "correct": false },
+          { "text": "Oberfläche = 4 * A_Basis", "correct": false }
+        ]
+      },
+      {
+        "question": "Was ist der Unterschied zwischen der Oberfläche eines Zylinders und einer Pyramide?",
+        "answers": [
+          { "text": "Die Oberfläche eines Zylinders beinhaltet immer einen Kreis, während die Oberfläche einer Pyramide eine poligonale Basis hat.", "correct": true },
+          { "text": "Die Oberfläche eines Zylinders hat keine runden Flächen, während eine Pyramide immer eine runde Basis hat.", "correct": false },
+          { "text": "Es gibt keinen Unterschied in der Berechnung der Oberfläche.", "correct": false },
+          { "text": "Die Oberfläche eines Zylinders ist immer kleiner als die einer Pyramide.", "correct": false }
+        ]
+      },
+      {
+        "question": "Wie berechnet man das Volumen einer Pyramide?",
+        "answers": [
+          { "text": "V = 1/3 * A_Basis * h", "correct": true },
+          { "text": "V = A_Basis * h", "correct": false },
+          { "text": "V = 1/2 * A_Basis * h", "correct": false },
+          { "text": "V = A_Basis + h", "correct": false }
+        ]
+      }
+    ]
+  }
+  

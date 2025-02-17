@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8. Klasse - Wahrscheinlichkeitsrechnung</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="main-title">Mathe: Wahrscheinlichkeitsrechnung</h1>
+
+        <div class="back-arrow">
+            <a href="..\8.klasse.html">&#8592; Zurück</a>
+        </div>
+
+        <div style="margin-top: 10%;" class="content">
+            <h2 class="section-title">Was ist Wahrscheinlichkeitsrechnung?</h2>
+            <p class="text">
+                Die Wahrscheinlichkeitsrechnung beschäftigt sich mit der Berechnung von Wahrscheinlichkeiten für verschiedene Ereignisse. 
+                Sie wird verwendet, um die Chance eines bestimmten Ergebnisses vorherzusagen.
+            </p>
+
+            <p class="formula"><b>P(Ereignis) = günstige Fälle / mögliche Fälle</b></p>
+
+            <!-- Eingeblendetes Bild zur Veranschaulichung -->
+            <div class="image-container">
+                <img src="../../Bilder/diagramm.svg" alt="Baumdiagramm zur Wahrscheinlichkeitsrechnung" class="image-small">
+            </div>
+
+            <h2 class="section-title">Grundregeln der Wahrscheinlichkeit</h2>
+            <ul class="list">
+                <li>Die Wahrscheinlichkeit liegt immer zwischen <b>0</b> (unmöglich) und <b>1</b> (sicher).</li>
+                <li>Die Summe aller möglichen Ereignisse ergibt <b>1</b>.</li>
+                <li>Je mehr günstige Fälle es gibt, desto höher ist die Wahrscheinlichkeit.</li>
+            </ul>
+
+            <h2 class="section-title">Beispiele</h2>
+            <ul class="list">
+                <li><b>Beispiel 1: Würfel</b> <br>
+                    Wie hoch ist die Wahrscheinlichkeit, eine 6 zu würfeln? <br>
+                    Es gibt 6 mögliche Ergebnisse (1,2,3,4,5,6), aber nur eine 6. <br>
+                    <b>P(6) = 1 / 6 ≈ 16,67%</b>
+                </li>
+
+                <li><b>Beispiel 2: Münzwurf</b> <br>
+                    Wie hoch ist die Wahrscheinlichkeit, "Kopf" zu bekommen? <br>
+                    Es gibt zwei mögliche Ergebnisse (Kopf oder Zahl). <br>
+                    <b>P(Kopf) = 1 / 2 = 50%</b>
+                </li>
+
+                <li><b>Beispiel 3: Mehrmaliges Würfeln</b> <br>
+                    Die Wahrscheinlichkeit für ein bestimmtes Ereignis bei mehreren Würfen wird durch Multiplikation der Einzelwahrscheinlichkeiten berechnet. <br>
+                    <b>Beispiel:</b> Wie hoch ist die Wahrscheinlichkeit, zweimal hintereinander eine 6 zu würfeln? <br>
+                    Die Wahrscheinlichkeit für eine einzelne 6 beträgt <b>1/6</b>. <br>
+                    Da die Würfe unabhängig voneinander sind, multiplizieren wir: <br>
+                    <b>P(6, 6) = (1/6) * (1/6) = 1/36 ≈ 2,78%</b>.
+                </li>
+            </ul>
+
+            <h2 class="section-title">Merkregel für mehrmaliges Würfeln</h2>
+            <p class="text">
+                Wenn ein Ereignis mehrfach hintereinander eintreten soll, multipliziert man die Wahrscheinlichkeiten der Einzelschritte miteinander.
+            </p>
+            <p class="formula"><b>P(Ereignis n-mal) = P(Ereignis)ⁿ</b></p>
+
+            <div class="quiz-link">
+                <a href="quiz.html" class="answer-btn">Teste dein Wissen zur Wahrscheinlichkeitsrechnung &rarr;</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

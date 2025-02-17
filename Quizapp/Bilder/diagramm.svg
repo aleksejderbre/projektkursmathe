@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="52cm" height="29cm" viewBox="-161 -161 1022 571" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g id="Hintergrund">
+    <g>
+      <ellipse style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #4b70bb" cx="339.48" cy="-140.613" rx="19.4799" ry="19.3872"/>
+      <text font-size="12.8" style="fill: #4b70bb; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="339.48" y="-136.732">
+        <tspan x="339.48" y="-136.732"></tspan>
+      </text>
+    </g>
+    <line style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" x1="323.695" y1="-127.638" x2="103.902" y2="53.0226"/>
+    <line style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" x1="340.407" y1="-120.243" x2="347.663" y2="39.0815"/>
+    <g>
+      <ellipse style="fill: #7588d0; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" cx="67.9568" cy="82.5685" rx="47.9568" ry="42.5685"/>
+      <text font-size="28.2222" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="67.9568" y="91.126">
+        <tspan x="67.9568" y="91.126">blau</tspan>
+      </text>
+    </g>
+    <g>
+      <ellipse style="fill: #6ee860; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" cx="349.714" cy="84.1285" rx="49.7143" ry="44.1285"/>
+      <text font-size="28.2222" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="349.714" y="92.686">
+        <tspan x="349.714" y="92.686">grün</tspan>
+      </text>
+    </g>
+    <g>
+      <ellipse style="fill: #ff6a6a; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" cx="629.714" cy="84.1285" rx="49.7143" ry="44.1285"/>
+      <text font-size="28.2222" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="629.714" y="92.686">
+        <tspan x="629.714" y="92.686">rot</tspan>
+      </text>
+    </g>
+    <line style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" x1="355.644" y1="-128.096" x2="591.593" y2="54.6092"/>
+    <text font-size="22.5778" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="160" y="-40">
+      <tspan x="160" y="-40">2/6</tspan>
+    </text>
+    <text font-size="22.5778" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="300" y="-40">
+      <tspan x="300" y="-40">1/6</tspan>
+    </text>
+    <text font-size="22.5778" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="500" y="-40">
+      <tspan x="500" y="-40">3/6</tspan>
+    </text>
+    <g>
+      <ellipse style="fill: #7588d0; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" cx="-112.043" cy="362.568" rx="47.9568" ry="42.5685"/>
+      <text font-size="28.2222" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-112.043" y="371.126">
+        <tspan x="-112.043" y="371.126">blau</tspan>
+      </text>
+    </g>
+    <g>
+      <ellipse style="fill: #6ee860; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" cx="9.71429" cy="364.128" rx="49.7143" ry="44.1285"/>
+      <text font-size="28.2222" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="9.71429" y="372.686">
+        <tspan x="9.71429" y="372.686">grün</tspan>
+      </text>
+    </g>
+    <g>
+      <ellipse style="fill: #ff6a6a; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" cx="129.714" cy="364.128" rx="49.7143" ry="44.1285"/>
+      <text font-size="28.2222" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="129.714" y="372.686">
+        <tspan x="129.714" y="372.686">rot</tspan>
+      </text>
+    </g>
+    <g>
+      <ellipse style="fill: #7588d0; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" cx="246.335" cy="362.568" rx="47.9568" ry="42.5685"/>
+      <text font-size="28.2222" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="246.335" y="371.126">
+        <tspan x="246.335" y="371.126">blau</tspan>
+      </text>
+    </g>
+    <g>
+      <ellipse style="fill: #ff6a6a; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" cx="457.283" cy="364.128" rx="49.7143" ry="44.1285"/>
+      <text font-size="28.2222" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="457.283" y="372.686">
+        <tspan x="457.283" y="372.686">rot</tspan>
+      </text>
+    </g>
+    <g>
+      <ellipse style="fill: #7588d0; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" cx="567.957" cy="362.568" rx="47.9568" ry="42.5685"/>
+      <text font-size="28.2222" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="567.957" y="371.126">
+        <tspan x="567.957" y="371.126">blau</tspan>
+      </text>
+    </g>
+    <g>
+      <ellipse style="fill: #6ee860; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" cx="689.714" cy="364.128" rx="49.7143" ry="44.1285"/>
+      <text font-size="28.2222" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="689.714" y="372.686">
+        <tspan x="689.714" y="372.686">grün</tspan>
+      </text>
+    </g>
+    <g>
+      <ellipse style="fill: #ff6a6a; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" cx="809.714" cy="364.128" rx="49.7143" ry="44.1285"/>
+      <text font-size="28.2222" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="809.714" y="372.686">
+        <tspan x="809.714" y="372.686">rot</tspan>
+      </text>
+    </g>
+    <line style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" x1="43.6496" y1="120.38" x2="-87.7359" y2="324.757"/>
+    <line style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" x1="59.0946" y1="125.411" x2="18.8947" y2="319.748"/>
+    <line style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" x1="77.3369" y1="125.334" x2="120.001" y2="319.843"/>
+    <line style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" x1="333.807" y1="126.972" x2="261.696" y2="321.195"/>
+    <line style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" x1="366.118" y1="126.827" x2="440.879" y2="321.43"/>
+    <line style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" x1="619.895" y1="128.399" x2="577.433" y2="319.844"/>
+    <line style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" x1="639.21" y1="128.442" x2="680.218" y2="319.815"/>
+    <line style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" x1="654.873" y1="123.264" x2="784.556" y2="324.993"/>
+    <text font-size="22.5778" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="-100" y="260">
+      <tspan x="-100" y="260">2/6</tspan>
+    </text>
+    <text font-size="22.5778" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="-20" y="260">
+      <tspan x="-20" y="260">1/6</tspan>
+    </text>
+    <text font-size="22.5778" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="120" y="260">
+      <tspan x="120" y="260">3/6</tspan>
+    </text>
+    <text font-size="22.5778" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="246.919" y="260">
+      <tspan x="246.919" y="260">2/6</tspan>
+    </text>
+    <text font-size="22.5778" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="417.838" y="260">
+      <tspan x="417.838" y="260">3/6</tspan>
+    </text>
+    <text font-size="22.5778" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="540" y="260">
+      <tspan x="540" y="260">2/6</tspan>
+    </text>
+    <text font-size="22.5778" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="620" y="260">
+      <tspan x="620" y="260">1/6</tspan>
+    </text>
+    <text font-size="22.5778" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="760" y="260">
+      <tspan x="760" y="260">3/6</tspan>
+    </text>
+    <g>
+      <ellipse style="fill: #6ee860; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" cx="349.714" cy="364.128" rx="49.7143" ry="44.1285"/>
+      <text font-size="28.2222" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="349.714" y="372.686">
+        <tspan x="349.714" y="372.686">grün</tspan>
+      </text>
+    </g>
+    <line style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" x1="349.714" y1="129.254" x2="349.714" y2="319.003"/>
+    <text font-size="22.5778" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="300" y="260">
+      <tspan x="300" y="260">1/6</tspan>
+    </text>
+  </g>
+</svg>

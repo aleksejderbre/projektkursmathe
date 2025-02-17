@@ -1,0 +1,75 @@
+{
+    "questions": [
+      {
+        "question": "Der Durchmesser eines Kreises ist doppelt so groß wie der Radius.",
+        "answers": [
+          { "text": "Wahr", "correct": true },
+          { "text": "Falsch", "correct": false }
+        ]
+      },
+      {
+        "question": "Die Kreisfläche wird mit der Formel A = π * d² berechnet.",
+        "answers": [
+          { "text": "Wahr", "correct": false },
+          { "text": "Falsch", "correct": true }
+        ]
+      },
+      {
+        "question": "Der Umfang eines Kreises mit Radius 5 cm beträgt 10π cm.",
+        "answers": [
+          { "text": "Wahr", "correct": true },
+          { "text": "Falsch", "correct": false }
+        ]
+      },
+      {
+        "question": "Alle Kreise haben den gleichen Umfang.",
+        "answers": [
+          { "text": "Wahr", "correct": false },
+          { "text": "Falsch", "correct": true }
+        ]
+      },
+      {
+        "question": "Wenn der Radius eines Kreises verdoppelt wird, vervierfacht sich die Fläche.",
+        "answers": [
+          { "text": "Wahr", "correct": true },
+          { "text": "Falsch", "correct": false }
+        ]
+      },
+      {
+        "question": "Die Zahl π ist eine rationale Zahl.",
+        "answers": [
+          { "text": "Wahr", "correct": false },
+          { "text": "Falsch", "correct": true }
+        ]
+      },
+      {
+        "question": "Die Kreiszahl π ist ungefähr 3,14159.",
+        "answers": [
+          { "text": "Wahr", "correct": true },
+          { "text": "Falsch", "correct": false }
+        ]
+      },
+      {
+        "question": "Der Umfang eines Kreises kann mit der Formel U = 2πr berechnet werden.",
+        "answers": [
+          { "text": "Wahr", "correct": true },
+          { "text": "Falsch", "correct": false }
+        ]
+      },
+      {
+        "question": "Der Radius eines Kreises ist immer größer als sein Durchmesser.",
+        "answers": [
+          { "text": "Wahr", "correct": false },
+          { "text": "Falsch", "correct": true }
+        ]
+      },
+      {
+        "question": "Die Tangente an einen Kreis steht immer senkrecht zum Radius im Berührungspunkt.",
+        "answers": [
+          { "text": "Wahr", "correct": true },
+          { "text": "Falsch", "correct": false }
+        ]
+      }
+    ]
+  }
+  

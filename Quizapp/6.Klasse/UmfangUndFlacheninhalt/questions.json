@@ -1,0 +1,58 @@
+{
+    "questions": [
+        {
+            "question": "Wie berechnet man den Umfang eines Rechtecks?",
+            "answers": [
+                { "text": "2 \u00d7 (L\u00e4nge + Breite)", "correct": true },
+                { "text": "L\u00e4nge + Breite", "correct": false },
+                { "text": "L\u00e4nge \u00d7 Breite", "correct": false },
+                { "text": "L\u00e4nge \u00b2 + Breite \u00b2", "correct": false }
+            ]
+        },
+        {
+            "question": "Wie berechnet man die Fl\u00e4che eines Quadrats?",
+            "answers": [
+                { "text": "Seitenl\u00e4nge \u00d7 Seitenl\u00e4nge", "correct": true },
+                { "text": "4 \u00d7 Seitenl\u00e4nge", "correct": false },
+                { "text": "Seitenl\u00e4nge + Seitenl\u00e4nge", "correct": false },
+                { "text": "(Seitenl\u00e4nge \u00d7 Seitenl\u00e4nge) \u00d7 2", "correct": false }
+            ]
+        },
+        {
+            "question": "Ein Rechteck hat die L\u00e4nge 8 cm und die Breite 5 cm. Wie gro\u00df ist seine Fl\u00e4che?",
+            "answers": [
+                { "text": "40 cm\u00b2", "correct": true },
+                { "text": "26 cm\u00b2", "correct": false },
+                { "text": "13 cm\u00b2", "correct": false },
+                { "text": "80 cm\u00b2", "correct": false }
+            ]
+        },
+        {
+            "question": "Wie berechnet man die Fl\u00e4che eines Dreiecks?",
+            "answers": [
+                { "text": "(Grundseite \u00d7 H\u00f6he) \u00f7 2", "correct": true },
+                { "text": "Grundseite \u00d7 H\u00f6he", "correct": false },
+                { "text": "2 \u00d7 (Grundseite + H\u00f6he)", "correct": false },
+                { "text": "Grundseite + H\u00f6he", "correct": false }
+            ]
+        },
+        {
+            "question": "Ein Quadrat hat eine Seitenl\u00e4nge von 6 cm. Wie gro\u00df ist sein Umfang?",
+            "answers": [
+                { "text": "24 cm", "correct": true },
+                { "text": "12 cm", "correct": false },
+                { "text": "36 cm", "correct": false },
+                { "text": "18 cm", "correct": false }
+            ]
+        },
+        {
+            "question": "Ein Dreieck hat eine Grundseite von 10 cm und eine H\u00f6he von 8 cm. Wie gro\u00df ist seine Fl\u00e4che?",
+            "answers": [
+                { "text": "40 cm\u00b2", "correct": true },
+                { "text": "80 cm\u00b2", "correct": false },
+                { "text": "20 cm\u00b2", "correct": false },
+                { "text": "16 cm\u00b2", "correct": false }
+            ]
+        }
+    ]
+}
