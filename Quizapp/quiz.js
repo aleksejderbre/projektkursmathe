@@ -1,7 +1,7 @@
 let questions = [];
 let currentQuestionIndex = 0;
 let score = 0;
-let correctAnswerText; // Deklariere correctAnswerText außerhalb der Funktionen
+let correctAnswerText;
 
 function startQuiz(questionsUrl) {
     fetch(questionsUrl)
@@ -17,9 +17,9 @@ function showQuestion() {
     const questionContainer = document.getElementById("question-container");
     const feedbackElement = document.getElementById("feedback");
 
-    feedbackElement.innerText = ""; // Feedback-Text leeren
-    feedbackElement.style.display = "block"; // Sicherstellen, dass es sichtbar bleibt
-    feedbackElement.classList.remove("correct-answer", "wrong-answer"); // Klassen entfernen
+    feedbackElement.innerText = ""; 
+    feedbackElement.style.display = "block"; 
+    feedbackElement.classList.remove("correct-answer", "wrong-answer"); 
     questionContainer.innerHTML = "";
 
     if (currentQuestionIndex < questions.length) {
@@ -42,19 +42,16 @@ function showQuestion() {
             const button = document.createElement("button");
             button.innerHTML = answer.text.replace(/(\d+)\/(\d+)/g, "<sup>$1</sup>&frasl;<sub>$2</sub>");
             button.classList.add("answer-btn");
-            button.onclick = () => selectAnswer(answer, correctAnswerText);
+            button.onclick = () => selectAnswer(answer);
             questionContainer.appendChild(button);
         });
     }
 }
 
-function selectAnswer(answer, correctAnswerText) {
+function selectAnswer(answer) {
     const feedbackElement = document.getElementById("feedback");
     const questionContainer = document.getElementById("question-container");
     const scoreElement = document.getElementById("score");
-    const nextBtn = document.getElementById("next-btn");
-
-    nextBtn.style.display = "none"; // nextBtn verstecken
 
     feedbackElement.classList.remove("correct-answer", "wrong-answer");
 
@@ -69,62 +66,65 @@ function selectAnswer(answer, correctAnswerText) {
         imageElement.src = "../../Bilder/Richtig.jpg";
         imageElement.alt = "Richtige Antwort";
         imageElement.style.width = "300px";
-        imageElement.style.height = "auto";
         questionContainer.appendChild(imageElement);
 
+        setTimeout(() => nextQuestion(), 2500);
     } else {
-        feedbackElement.innerText = `Falsch! Schade, beim nächsten Mal. Richtige Antwort: ${correctAnswerText}`;
+        feedbackElement.innerText = "FALSCH! Versuche es erneut."
         feedbackElement.classList.add("wrong-answer");
+
+        if (score > 0) {
+            score--;
+            scoreElement.innerText = score;
+        }
 
         questionContainer.innerHTML = "";
         const imageElement = document.createElement("img");
         imageElement.src = "../../Bilder/Falsch.jpg";
         imageElement.alt = "Falsche Antwort";
         imageElement.style.width = "300px";
-        imageElement.style.height = "auto";
         questionContainer.appendChild(imageElement);
-    }
 
-    setTimeout(() => {
-        feedbackElement.innerHTML = "";
-        nextBtn.style.display = "inline-block";
-        nextQuestion(); // Die nächste Frage anzeigen
-    }, 2500);
+        setTimeout(() => showQuestion(), 2500);
+    }
 }
 
 function nextQuestion() {
-    const questionContainer = document.getElementById("question-container");
-    const feedbackElement = document.getElementById("feedback");
-    const nextBtn = document.getElementById("next-btn");
-
     currentQuestionIndex++;
 
     if (currentQuestionIndex < questions.length) {
         showQuestion();
     } else {
-        questionContainer.innerHTML = "";
-        feedbackElement.innerText = "Glückwunsch, du hast das Quiz beendet!";
-        feedbackElement.style.color = "White";
-        nextBtn.style.display = "none";
-        
-
-        const imageElement = document.createElement("img");
-        if (score === questions.length) {
-            imageElement.src = "../../Bilder/Perfekt.jpg";
-            feedbackElement.innerText = "VOLLE PUNKTZAHL!";
-        } else if (score > questions.length * 0.7) {
-            imageElement.src = "../../Bilder/highscore.jpg";
-        } else if (score > questions.length * 0.3) {
-            imageElement.src = "../../Bilder/lowscore.jpg";
-        } else {
-            imageElement.src = "../../Bilder/TryAgain.webp";
-        }
-
-        imageElement.alt = "Quiz beendet";
-        imageElement.style.width = "280px";
-        imageElement.style.margin = "20px auto";
-        questionContainer.appendChild(imageElement);
+        endQuiz();
     }
+}
+
+function endQuiz() {
+    const questionContainer = document.getElementById("question-container");
+    const feedbackElement = document.getElementById("feedback");
+
+    questionContainer.innerHTML = "";
+    feedbackElement.style.color = "white";
+
+    const imageElement = document.createElement("img");
+    if (score === questions.length) {
+        imageElement.src = "../../Bilder/Perfekt.jpg";
+        feedbackElement.innerText = "VOLLE PUNKTZAHL!";
+    } else if (score > questions.length * 0.7) {
+        imageElement.src = "../../Bilder/highscore.jpg";
+        feedbackElement.innerText = "Glückwunsch, du hast das Quiz beendet!";
+    } else if (score > questions.length * 0.3) {
+        imageElement.src = "../../Bilder/lowscore.jpg";
+        feedbackElement.innerText = "Du hast das Quiz beendet, doch hast eine niedrige Punktzahl!";
+    } else {
+        imageElement.src = "../../Bilder/TryAgain.webp";
+        feedbackElement.innerText = "Versuch es erneut, du hast echt wenig Punkte!";
+    }
+
+    imageElement.alt = "Quiz beendet";
+    imageElement.style.width = "280px";
+    imageElement.style.margin = "20px auto";
+    questionContainer.appendChild(imageElement);
 }
 
 function shuffleArray(array) {
