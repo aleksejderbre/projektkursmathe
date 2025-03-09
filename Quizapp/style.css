@@ -3,16 +3,18 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
     min-height: 100vh;
     background-image: url("./Bilder/hintergrund.jpg");
     background-size: cover;
     background-position: center;
     position: relative;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 100%; /* Wichtig: Body nimmt immer die volle Breite ein */
 }
 
-/* Leicht dunkles Overlay für bessere Lesbarkeit */
 body::before {
     content: "";
     position: absolute;
@@ -24,46 +26,44 @@ body::before {
     z-index: 0;
 }
 
-
-/* Container für Inhalte */
 .container {
     position: relative;
     z-index: 2;
     text-align: center;
-    padding: 20px;
+    padding: 20px; /* Fester Padding-Wert */
+    width: 95%;
+    max-width: 700px; /* Maximale Breite für den Container */
+    box-sizing: border-box;
 }
 
-/* Überschriften */
 h1 {
-    color: #908effd0; 
-    font-size: 2.5em;
-    margin-bottom: 15px;
+    color: #908effd0;
+    font-size: 2.5em; /* Feste Größe */
+    margin-bottom: 10px;
     text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.753);
 }
 
 h2 {
     color: #ffffff;
-    font-size: 1.5em;
+    font-size: 1.8em; /* Feste Größe */
     background-color: rgba(0, 99, 197, 0.623);
-    padding: 10px;
+    padding: 0.8em;
     border-radius: 8px;
     display: inline-block;
-    margin: 20px 0;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
-    box-shadow: 0px 0px 10px rgba(117, 185, 253, 0.7);
+    margin: 1.2em 0;
 }
 
 .text {
-    font-size: 1.2em;
-    color: #f5f5f5; 
-    line-height: 1.6; 
-    text-align: justify; 
-    padding: 10px; 
+    font-size: 1.2em; /* Feste Größe */
+    color: #f5f5f5;
+    line-height: 1.6;
+    text-align: justify;
+    padding: 1em;
     border-radius: 5px;
-    background-color: rgba(0, 0, 0, 0.192); 
+    background-color: rgba(0, 0, 0, 0.192);
+    box-sizing: border-box;
 }
 
-/* Stil für mathematische Formeln und Code */
 code {
     font-family: "Consolas", monospace;
     font-weight: bold;
@@ -77,121 +77,95 @@ code {
     word-wrap: break-word;
 }
 
-/* Listen-Styling */
 ul, ol {
-    text-align: center;
+    text-align: left; /* Linksbündige Ausrichtung für Listen */
     padding-left: 20px;
     margin: 10px 0;
 }
 
 li {
-    font-size: 1.1em;
+    font-size: 1em;
     color: #cce0ff;
     margin: 5px 0;
     line-height: 1.5;
+    list-style: disc; /* Aufzählungszeichen hinzufügen */
 }
 
-li {
-    list-style: none;
-}
-
-
-/* Fettgedruckter Text */
 b {
     font-weight: bold;
     color: #73ff9d7c;
 }
 
-/* Vertikale Links als Kästchen */
-.links a {
+.links a, .answer-btn, #next-btn {
     display: block;
+    width: 90%; /* Breite an den Container anpassen */
+    max-width: 400px;
+    margin: 1em auto;
+    padding: 0.8em;
+    font-size: 1.1em;
+    text-align: center;
+    border-radius: 8px;
+    transition: 0.3s ease;
+    box-sizing: border-box;
+    text-decoration: none; /* Entfernt Unterstreichung bei Links */
+}
+
+.links a {
     background-color: #00448db7;
     color: rgb(196, 196, 196);
-    text-decoration: none;
-    padding: 15px;
-    border-radius: 8px;
-    font-size: 1.1em;
-    margin: 10px 0;
-    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .links a:hover {
     background-color: #0056b3;
     color: rgb(255, 255, 255);
-    transform: scale(1.05);
-    box-shadow: 0px 4px 12px rgb(0, 0, 0);
 }
 
 .answer-btn {
-    width: 400px;
-    display: block;
     background-color: #0073e6;
     color: white;
-    text-decoration: none;
-    padding: 15px;
-    border-radius: 8px;
-    font-size: 1.2em;
-    margin: 10px auto;
-    transition: background-color 0.3s ease, transform 0.2s ease;
     box-shadow: 0px 4px 12px rgb(0, 63, 71);
+    border: none; /* Entfernt Standard-Button-Rahmen */
     cursor: pointer;
-    border: none;
-    text-align: center;
 }
 
 .answer-btn:hover {
     background-color: #0056b3;
-    transform: scale(1.05);
-    box-shadow: 0px 6px 15px #0057b3bd;
 }
 
 #next-btn {
-    margin-top: 10px;
-    padding: 12px 24px;
-    font-size: 1.2em;
-    cursor: pointer;
     background-color: #28a745;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    box-shadow: 0px 4px 12px rgb(0, 36, 8);
+    color: white;
+    border: none; /* Entfernt Standard-Button-Rahmen */
+    cursor: pointer;
 }
 
 #next-btn:hover {
     background-color: #218838;
-    transform: scale(1.05);
-    box-shadow: 0px 6px 15px rgba(22, 94, 39, 0.9);
 }
 
-/* Zurück-Button */
 .back-arrow {
     position: fixed;
     top: 15px;
     left: 15px;
-    padding: 1%;
+    padding: 10px;
     font-size: 1.2em;
     background-color: rgba(0, 52, 107, 0.5);
     border-radius: 30px;
-    box-shadow: 0px 2px 10px rgba(0, 52, 107, 0.5);
+    z-index: 10;
 }
 
 .back-arrow a {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    display: flex;
-    align-items: center;
 }
 
 .back-arrow a:hover {
     color: hsla(219, 100%, 81%, 0.815);
-    text-decoration: none;
 }
 
-/* Bilder */
 .image-small {
-    width: 100%;
+    width: 90%;
     max-width: 300px;
     height: auto;
     object-fit: cover;
@@ -205,64 +179,38 @@ b {
     font-weight: bolder;
     background-color: rgba(0, 0, 0, 0.205);
     color: #ffffff;
-    padding: 1px 12px; 
+    padding: 5px 15px;
     border-radius: 11px;
-    margin-inline: auto; 
-    margin-top: 30px;
+    margin: 20px auto;
     text-align: center;
     min-width: 80px;
     max-width: 150px;
     box-shadow: 2px 2px 10px rgba(0, 99, 0, 0.568);
 }
 
-.correct-answer {
-    font-size: 1.5em;
-    background-color: rgba(7, 77, 7, 0.6);
+.correct-answer, .wrong-answer {
+    font-size: 1.2em;
     color: #ffffff;
     padding: 7px 10px;
     border-radius: 10px;
-    max-width: 150px;
     display: inline-block;
-    margin: 5px auto;
+    margin: 10px auto;
     word-wrap: break-word;
+}
+
+.correct-answer {
+    background-color: rgba(7, 77, 7, 0.6);
 }
 
 .wrong-answer {
-    font-size: 1.5em;
     background-color: rgba(128, 0, 0, 0.6);
-    color: #ffffff;
-    padding: 7px 11px;
-    border-radius: 10px;
-    display: inline-block;
-    margin: 5px auto;
-    word-wrap: break-word;
 }
 
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
-
-/* Responsives Design */
+/* Media Queries */
 @media (min-width: 768px) {
     .container {
-        max-width: 500px;
-        padding: 6vh 8vw;
-    }
-
-    h1 {
-        font-size: 2.5em;
-    }
-
-    h2 {
-        font-size: 1.5em;
-    }
-}
-
-@media (min-width: 1024px) {
-    .container {
-        max-width: 600px;
+        max-width: 900px; /* Größere max-width für Tablets/Desktops */
+        padding: 30px;
     }
 
     h1 {
@@ -270,10 +218,71 @@ b {
     }
 
     h2 {
-        font-size: 1.8em;
+        font-size: 2em;
+        padding: 1em;
+        margin: 1.5em 0;
     }
 
-    .answer-btn {
-        padding: 15px 30px;
+    .text {
+        font-size: 1.4em;
+        padding: 1.2em;
+    }
+
+    .links a, .answer-btn, #next-btn {
+        font-size: 1.2em;
+        padding: 1em;
+        margin: 1.2em auto;
+    }
+
+    .back-arrow {
+        font-size: 1.4em;
+        padding: 12px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        max-width: 900px; /* Breite für größere Desktops */
+        padding: 40px;
+    }
+
+    h1 {
+        font-size: 3.5em; /* Größere Überschrift */
+    }
+
+    h2 {
+        font-size: 2.2em; /* Größere Unterüberschrift */
+        padding: 1.2em;
+        margin: 1.8em 0;
+    }
+
+    .text {
+        font-size: 1.6em; /* Größerer Text */
+        padding: 1.5em;
+    }
+
+    .links a, .answer-btn, #next-btn {
+        font-size: 1.4em; /* Größere Buttons/Links */
+        padding: 1.2em;
+        margin: 1.5em auto;
+    }
+
+    .back-arrow {
+        font-size: 1.6em;
+        padding: 14px;
+    }
+
+    .image-small {
+        max-width: 400px; /* Größere Bilder */
+    }
+
+    #score-container {
+        font-size: 1.4em;
+        padding: 8px 20px;
+    }
+
+    .correct-answer, .wrong-answer {
+        font-size: 1.4em;
+        padding: 8px 15px;
     }
 }
